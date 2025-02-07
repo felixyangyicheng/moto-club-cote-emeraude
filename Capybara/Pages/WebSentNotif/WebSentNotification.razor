@@ -1,0 +1,62 @@
+﻿@page "/PWANotif"
+@inject HttpClient _httpClient
+@inject IJSRuntime JSRuntime
+@using Console=System.Console
+<button class="btn btn-primary" @onclick="Send">Send Notification</button>
+@code {
+    [Inject, NotNull] IConfiguration? configuration { get; set; }
+
+    protected override void OnInitialized()
+    {
+        _ = RequestNotificationSubscriptionAsync();
+    }
+    private async Task RequestNotificationSubscriptionAsync()
+    {
+        var subscription = await JSRuntime.InvokeAsync<NotificationSubscription>("blazorPushNotifications.requestSubscription");
+        Console.WriteLine(subscription);
+        if (subscription != null)
+        {
+            try
+            {
+                await SubscribeToNotification(subscription);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+
+    private async Task Send()
+    {
+        try
+        {
+            await SendNotification();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+    protected async Task SubscribeToNotification(NotificationSubscription subscription)
+    {
+        #if DEBUG
+        string apiurl = configuration.GetValue<string>("notification.push.srv.local") ?? throw new ArgumentNullException(nameof(apiurl));
+        #else
+        string apiurl = configuration.GetValue<string>("notification.push.srv") ?? throw new ArgumentNullException(nameof(apiurl));
+        #endif
+        var response = await _httpClient.PutAsJsonAsync($"{apiurl}/notifications/subscription", subscription);
+        response.EnsureSuccessStatusCode();
+    }
+
+    protected async Task SendNotification()
+    {
+#if DEBUG
+    string apiurl = configuration.GetValue<string>("notification.push.srv.local") ?? throw new ArgumentNullException(nameof(apiurl));
+#else
+        string apiurl = configuration.GetValue<string>("notification.push.srv") ?? throw new ArgumentNullException(nameof(apiurl));
+#endif
+        var response = await _httpClient.PostAsync($"{apiurl}/notifications/send", null);
+        response.EnsureSuccessStatusCode();
+    }
+}
