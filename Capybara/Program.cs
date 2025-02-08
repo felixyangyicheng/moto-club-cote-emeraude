@@ -1,6 +1,7 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using ApexCharts;
 using Capybara.HashCheckService;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,10 +31,9 @@ builder.Services.AddHttpClient("fileshare.srv", client =>
 {
     client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("fileshare.srv") ?? throw new ArgumentException());
 });
-builder.Services.AddPWAUpdater();
 builder.Services.AddBootstrapBlazor();
 builder.Services.AddSingleton<HashServiceFactory>();
-builder.Services.AddSpeechSynthesis();
+
 
         builder.Services.AddMudServices(config =>
         {

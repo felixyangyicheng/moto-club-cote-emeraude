@@ -1,16 +1,17 @@
 ﻿@inherits LayoutComponentBase
 
 
-<MudThemeProvider />
+<MudThemeProvider Theme="@CustomTheme" />
 <MudDialogProvider />
 <MudPopoverProvider />
 <MudSnackbarProvider />
-<PWAUpdater />
+
 <MudLayout >
-    <MudAppBar Color='Color.Info'>
-        <MudButton Variant='Variant.Text' Color='Color.Info' OnClick='DrawerToggle'>
-            <MudIcon Icon='@JudoGi' Title='JudoGi' Size='Size.Large' />
+    <MudAppBar Style="@(_bgCyanLighten1)">
+        <MudButton Variant='Variant.Text' Style="@(_bgCyanLighten1)" OnClick='DrawerToggle'>
+            <MudIcon Icon='@JudoGi' Title='JudoGi' Size='Size.Large' /> 
         </MudButton>
+        <MudText Typo="Typo.h6">Moto Club Côte d'Emeraude</MudText>
         <MudSpacer />
     </MudAppBar>
     <MudDrawer @bind-Open='@_drawerOpen'>
@@ -26,7 +27,22 @@
 
 @code {
     bool _drawerOpen = true;
-
+    string _bgCyanLighten1 = $"background:{Colors.Cyan.Lighten1};";
+    MudTheme CustomTheme = new MudTheme()
+        {
+            Typography = new Typography()
+            {
+                H6 = new H6Typography()
+                {
+                    FontFamily = new[] { "Poppins" },
+                    FontSize = "calc(1.275rem + .3vw)",
+                    FontWeight = "700",
+                    LineHeight = "1.2",
+                    LetterSpacing = ".0075em",
+                    
+                }
+            }
+        };
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
