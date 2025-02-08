@@ -3,121 +3,6 @@
 @import '_content/Toolbelt.Blazor.PWA.Updater/Toolbelt.Blazor.PWA.Updater.bundle.scp.css';
 @import '_content/ZXingBlazor/ZXingBlazor.bundle.scp.css';
 
-/* /Components/ComboInput/IndividualLetterComboInput.razor.rz.scp.css */
-/* Style de base pour l'élément input */
-.case[b-pp2zsstjj9] {
-    width: 35px;
-    height: 35px;
-    margin: 1px;
-    font-family: 'Arial', sans-serif; /* Police de caractère */
-    font-size: 10px; /* Taille de la police */
-    color: #333; /* Couleur du texte */
-    font-weight: bold; /* Poids de la police (gras) */
-    font-style: italic; /* Style de la police (italique) */
-    text-transform: uppercase; /* Texte en majuscules */
-    text-align: left; /* Alignement du texte */
-}
-
-/* Pour les fenêtres de moins de 600px de large */
-@media (max-width: 399px) {
-    .case[b-pp2zsstjj9] {
-        width: 35px;
-        height: 35px;
-        font-size: 7.5px;
-    }
-}
-
-/* Pour les fenêtres de 600px à 899px de large */
-@media (min-width: 400px) and (max-width: 899px) {
-    .case[b-pp2zsstjj9] {
-        width: 45px;
-        height: 45px;
-        font-size: 12.5px;
-    }
-}
-
-/* Pour les fenêtres de 900px à 1199px de large */
-@media (min-width: 900px) and (max-width: 1199px) {
-    .case[b-pp2zsstjj9] {
-        width: 45px;
-        height: 45px;
-        font-size: 12.5px;
-    }
-}
-
-/* Pour les fenêtres de 1200px et plus */
-@media (min-width: 1200px) {
-    .case[b-pp2zsstjj9] {
-        width: 50px;
-        height: 50px;
-        font-size: 12.5px;
-    }
-}
-
-.combocase[b-pp2zsstjj9] {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.default[b-pp2zsstjj9] {
-    border: 2px solid blue;
-}
-
-.correct[b-pp2zsstjj9] {
-    border: 2px solid green;
-    background-color: rgba(37, 195, 61, 0.34);
-}
-
-.all-correct[b-pp2zsstjj9] {
-    background-color: rgba(37, 195, 61, 0.34);
-    border: 5px solid green;
-}
-
-.incorrect[b-pp2zsstjj9] {
-    border: 2px solid red;
-    background-color: rgba(255, 47, 70, 0.45);
-}
-/* /Components/Dominos/Piece.razor.rz.scp.css */
-body[b-7loz76w1nx] {
-}
-.individualValue[b-7loz76w1nx] {
-    height: 6.5vw;
-    width: 6.5vw;
-}
-.pieceBorder[b-7loz76w1nx] {
-    display: flex;
-
-    border: 0.5px solid;
-    border-radius: 5px;
-
-    height: fit-content;
-}
-.pieceBorderVertical[b-7loz76w1nx] {
-    display: flex; /* Utilise flexbox */
-    flex-direction: column; /* Empile les enfants verticalement */
-    align-items: center; /* Centre les images horizontalement */
-    border: 0.5px solid;
-    border-radius: 5px;
-}
-
-.dominoPiece[b-7loz76w1nx] {
-    position: absolute;
-    display: flex;
-    border: 1px solid #000;
-    background-color: #f9f9f9;
-    align-items: center;
-}
-
-.dominoPiece.vertical[b-7loz76w1nx] {
-    flex-direction: column;
-}
-
-/*.individualValue {
-    width: 50%;
-    height: auto;
-}
-
-*/
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-rcy5nsiigv] {
     position: relative;
@@ -272,24 +157,6 @@ main[b-rcy5nsiigv] {
 }
 
 /* /Pages/AboutMe.razor.rz.scp.css */
-/* /Pages/FileTransfer/UpdateAvailableDetector.razor.rz.scp.css */
-.floating-update-button[b-vnbrakvrc7] {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    padding: 2rem 1.5rem;
-    animation: fadein-b-vnbrakvrc7 2s ease-out;
-}
-
-@keyframes fadein-b-vnbrakvrc7 {
-    from {
-        right: -10%;
-    }
-
-    to {
-        right: 2rem;
-    }
-}
 /* /Pages/Home.razor.rz.scp.css */
 *[b-n7ttzm87hq] {
     box-sizing: border-box;
@@ -443,46 +310,6 @@ code[b-n7ttzm87hq] {
         display: block;
     }
 }
-/* /Pages/Schedules/GuestViews/MakeAppointment.razor.rz.scp.css */
-
-body[b-9gozk40u5c] {
-
-}
-
-.taken[b-9gozk40u5c] {
-    background: #243960;
-    background: linear-gradient( 45deg, rgba(0, 153, 68, .5) 25%, transparent 25%, transparent 50%, rgba(0, 153, 68, .5) 50%, rgba(0, 153, 68, .5) 75%, transparent 75%, transparent );
-    background-size: 10px 10px;
-    color: black;
-}
-
-.passed[b-9gozk40u5c] {
-    background: #243960;
-    background: linear-gradient( 45deg, #243960 0, #243960 0 25%, transparent 25%, transparent 50%, #243960 0 50%, #243960 0 75%, transparent 75%, transparent );
-    background-size: 10px 10px;
-    color:wheat;
-}
-/* /Pages/SpeechSynthesisUseCase.razor.rz.scp.css */
-.status .indicators[b-1wkqh0xqsn] {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-    .status .indicators div[b-1wkqh0xqsn] {
-        border: solid 1px #888;
-        border-radius: 6px;
-        width: 5rem;
-        text-align: center;
-        padding: 0.2rem 0;
-        background-color: #333;
-        color: #888;
-        margin-bottom: 0.5rem;
-    }
-
-        .status .indicators div.active[b-1wkqh0xqsn] {
-            color: #6f6;
-        }
 /* /Shared/Dialogs/DialogLoading.razor.rz.scp.css */
 .mask[b-uksrfthg8n] {
     position: fixed;
