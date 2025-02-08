@@ -1,6 +1,6 @@
-@import '_content/BootstrapBlazor.WebAPI/BootstrapBlazor.WebAPI.bundle.scp.css';
-@import '_content/ReactorBlazorQRCodeScanner/ReactorBlazorQRCodeScanner.bundle.scp.css';
-@import '_content/Toolbelt.Blazor.PWA.Updater/Toolbelt.Blazor.PWA.Updater.bundle.scp.css';
+@import '_content/BootstrapBlazor.WebAPI/BootstrapBlazor.WebAPI.avp4en0ob8.bundle.scp.css';
+@import '_content/ReactorBlazorQRCodeScanner/ReactorBlazorQRCodeScanner.boasv5qmh0.bundle.scp.css';
+@import '_content/Toolbelt.Blazor.PWA.Updater/Toolbelt.Blazor.PWA.Updater.bnjuj6nd91.bundle.scp.css';
 @import '_content/ZXingBlazor/ZXingBlazor.bundle.scp.css';
 
 /* /Layout/MainLayout.razor.rz.scp.css */
@@ -19,7 +19,7 @@ main[b-rcy5nsiigv] {
 }
 
 .top-row[b-rcy5nsiigv] {
-    background-color: #f7f7f7;
+    background-color: #22b3c1;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
