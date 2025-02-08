@@ -7,8 +7,8 @@
   "theme_color": "#03173d",
   "icons": [
     {
-      "src": "img/Moto-club.png",
-      "type": "image/png",
+      "src": "img/Moto-club.svg",
+      "type": "image/svg",
       "sizes": "512x512"
     }
   ]
