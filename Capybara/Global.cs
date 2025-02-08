@@ -9,8 +9,8 @@ global using System.Runtime.InteropServices;
 global using Microsoft.AspNetCore.Components.Web;
 global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 global using Capybara;
-global using Capybara.Components;
-global using Capybara.Components.ComboInput;
+
+
 global using MudBlazor.Services;
 global using MudBlazor;
 global using Toolbelt.Blazor.Extensions.DependencyInjection;
@@ -18,7 +18,7 @@ global using Tewr.Blazor.FileReader;
 global using Capybara.Models;
 global using System.Net.Http.Json;
 global using ApexCharts;
-global using Capybara.Components.Dialogs;
+
 global using JiuLing.CommonLibs.ExtensionMethods;
 global using Microsoft.AspNetCore.SignalR.Client;
 global using Microsoft.JSInterop;
@@ -28,7 +28,7 @@ global using Capybara.Shared.Dialogs;
 global using System.Collections.Concurrent;
 global using System.Text.Json;
 global using Capybara.Shared;
-global using Capybara.Models.Appointment;
+
 global using Heron.MudCalendar;
 global using ZXingBlazor.Components;
 
