@@ -1,8 +1,8 @@
 self.assetsManifest = {
-  "version": "E68lIPko",
+  "version": "aW2YwuHS",
   "assets": [
     {
-      "hash": "sha256-bHs9GNE2CjnTxH+8Ls3CjW5C8eC06FzSFY5HMXvJo+I=",
+      "hash": "sha256-jXb/s/8EKHqgCjLDYf3tTaSansZuV+9KTkX+s7iU0IY=",
       "url": "Capybara.styles.css"
     },
     {
@@ -842,8 +842,8 @@ self.assetsManifest = {
       "url": "_framework/BootstrapBlazor.iz764a8x83.wasm"
     },
     {
-      "hash": "sha256-iz3BcwFHgzqMVADephCSAswgaUUYb0nSU6+m5R/H6Bk=",
-      "url": "_framework/Capybara.pn28flaq00.wasm"
+      "hash": "sha256-rDTvzIHiA7Ed5qdsvFP4zL9x9Z9dTmKw1paxkUg4gME=",
+      "url": "_framework/Capybara.4695n08yh0.wasm"
     },
     {
       "hash": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N/oIQdCKfA=",
@@ -1094,8 +1094,8 @@ self.assetsManifest = {
       "url": "_framework/System.Net.Http.Json.v9c8d1v8xi.wasm"
     },
     {
-      "hash": "sha256-aGGJkjsFcolcVouIwWv3iRyozym9UbdfownDUcVcq78=",
-      "url": "_framework/System.Net.Http.o0dmumo48p.wasm"
+      "hash": "sha256-Jr6qDUKKVQaeFRMNJoAoUx3N05o4ouowUmDizgC9sjU=",
+      "url": "_framework/System.Net.Http.agxexgagoc.wasm"
     },
     {
       "hash": "sha256-rGzWSSIyew3aKghtqUWPeuhC+qfphq2iPTzGqRu97pg=",
@@ -1106,8 +1106,8 @@ self.assetsManifest = {
       "url": "_framework/System.ObjectModel.1r9ga2qbt8.wasm"
     },
     {
-      "hash": "sha256-w+oG/CFwZnK9HMOuPFeBERkHs3qaQmFU7ntNgaEqW38=",
-      "url": "_framework/System.Private.CoreLib.99fgcitq3g.wasm"
+      "hash": "sha256-HZjKl6vs5nVi5EPXHP6xIDkON6pcCTHMQzAwE1mYtIQ=",
+      "url": "_framework/System.Private.CoreLib.9dontkfn8v.wasm"
     },
     {
       "hash": "sha256-jkYWPIgi/Hi7TB+nbYw1qK/tlkEZMmXPUlegkaMjc2k=",
@@ -1206,7 +1206,7 @@ self.assetsManifest = {
       "url": "_framework/ZXingBlazor.6d6suntskg.wasm"
     },
     {
-      "hash": "sha256-0SOZ6iBYUTiigeB7PyDf97tW1JK4iOa3LRJu94Mq7rs=",
+      "hash": "sha256-3/0gRlFMvw/K6VgBnZbY7VSrP40j7OgaPbZp93C3m4A=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1218,8 +1218,8 @@ self.assetsManifest = {
       "url": "_framework/dotnet.js"
     },
     {
-      "hash": "sha256-UlDddLI+DsrruOIbWKlCCgrUjEfrfqTRN0yI+ktXtqE=",
-      "url": "_framework/dotnet.native.2fd7oippiy.wasm"
+      "hash": "sha256-afafVJh3YY4A0f8sM7RoXzWvOhnP+l1UzkDcLpWMVJY=",
+      "url": "_framework/dotnet.native.9cjy002994.wasm"
     },
     {
       "hash": "sha256-6dr8o/ia2Qz4Aa5ME6ABY0O9luCTU+mvtQnbx87irQo=",
@@ -1294,6 +1294,10 @@ self.assetsManifest = {
       "url": "favicon.png"
     },
     {
+      "hash": "sha256-vauIgAkEfaNVcI1DVpYaB2I/SjzAgnRCuiLKjVQHElo=",
+      "url": "img/Moto-club.svg"
+    },
+    {
       "hash": "sha256-M+xOz7N1bk2x+EGU7DPysbcYRJnNZD7bPSpSmnIiD5c=",
       "url": "img/bike.svg"
     },
@@ -1306,7 +1310,7 @@ self.assetsManifest = {
       "url": "img/logo.svg"
     },
     {
-      "hash": "sha256-bgeYU4G0lX75HXbB73BqXP5bv9W25KwVmdWHuiV+Dik=",
+      "hash": "sha256-UP+CDM/iC8zUCKXg27l/WxhvyrZT7aOYcpQzOWJoyVE=",
       "url": "index.html"
     },
     {
@@ -1334,7 +1338,7 @@ self.assetsManifest = {
       "url": "js/ts/scrollTestInTs.js.map"
     },
     {
-      "hash": "sha256-Gr/2WxGoN+T3j9bHHuIbilEv1qxkaBl4UgZ4WFXED8Q=",
+      "hash": "sha256-ArwILlc/x8iVB9lEkz9LqhozSHT0LxyDO5rl7ORY3Vc=",
       "url": "manifest.json"
     },
     {
