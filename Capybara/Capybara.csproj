@@ -16,6 +16,7 @@
 
     <ItemGroup>
         <PackageReference Include="Blazor-ApexCharts" Version="5.1.0" />
+        <PackageReference Include="BlazorTypewriter" Version="1.1.0" />
 
 		<PackageReference Include="BootstrapBlazor" Version="9.3.0" />
 		<PackageReference Include="BootstrapBlazor.Markdown" Version="9.0.1" />
