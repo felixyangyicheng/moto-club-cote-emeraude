@@ -1,4 +1,59 @@
 ﻿@page "/contact"
+@using Color =MudBlazor.Color
+@using Transition =MudBlazor.Transition
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<MudContainer>
+	<div class="stack">
+	
+			<br />
+	
+
+			<br />
+	
+	</div>
+
+
+    <MudCarousel Class="mud-width-full" Style="height:45vh;" AutoCycleTime="new TimeSpan(35000000)" AutoCycle="true" TData="object">
+
+        <PreviousButtonTemplate>
+            <div Class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
+                <span class="mud-icon-button-label">
+                    <MudIcon Class="mud-ripple mud-ripple-icon mud-icon-button-size-medium" Icon="@Icons.Material.Filled.SkipPrevious" Color="@Color.Inherit" />
+                </span>
+            </div>
+        </PreviousButtonTemplate>
+        <NextButtonTemplate>
+            <div Class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
+                <span class="mud-icon-button-label">
+                    <MudIcon Class="mud-ripple mud-ripple-icon mud-icon-button-size-medium" Icon="@Icons.Material.Filled.SkipNext" Color="@Color.Inherit" />
+                </span>
+            </div>
+        </NextButtonTemplate>
+        <ChildContent>
+            <MudCarouselItem Color="@Color.Info" Transition="Transition.Custom" CustomTransitionEnter="backInDown" CustomTransitionExit="backOutDown">
+                <div align="center" style="height:100%">
+                    <iframe align="middle" class="streeview" src="https://www.google.com/maps/embed?pb=!4v1739097476896!6m8!1m7!1soy-EtEXEuLhdFwGgrca9uw!2m2!1d48.57930853097264!2d-2.063341328760881!3f34.774330809806216!4f1.580117945933793!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <small>
+                        <a href="https://www.openstreetmap.org/?mlat=48.579432&amp;mlon=-2.063316#map=17/48.579425/-2.063316&amp;layers=TN">Voir en détail</a>
+                    </small>
+                </div>
+            </MudCarouselItem>
+            <MudCarouselItem Color="@Color.Info" Transition="Transition.Custom" CustomTransitionEnter="backInDown" CustomTransitionExit="backOutDown">
+                <div align="center" style="height:100%">
+                    <iframe align="middle" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.070214748382569%2C48.57715370509645%2C-2.0564174652099614%2C48.5816964225991&amp;layer=transportmap&amp;marker=48.5794321707394%2C-2.0633161067962646" style="border: 1px solid black"></iframe>
+                </div>
+            </MudCarouselItem>
+            <MudCarouselItem Color="@Color.Info" Transition="Transition.Custom" CustomTransitionEnter="backInDown" CustomTransitionExit="backOutDown">
+                <div align="center" style="height:100%">
+                    <img align="middle" src="https://github-readme-streak-stats.herokuapp.com/?user=felixyangyicheng&" alt="felixyangyicheng" />
+                </div>
+            </MudCarouselItem>
+
+
+
+        </ChildContent>
+    </MudCarousel>
+</MudContainer>
 
 @code {
 

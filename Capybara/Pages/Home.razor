@@ -2,6 +2,7 @@
 
 @inject IConfiguration _configuration
 
+
 <MudContainer>
     @if (loading)
     {
@@ -19,7 +20,7 @@
     <br />
     <h1 align="center">"Un jour, nos routes se croiseront. Un regard, un signe de motard, un instant de fraternité sur l'asphalte. Peu importe la moto, peu importe la destination, ce qui compte, c'est le voyage et la passion qui nous unit. Bonne route et vive la moto ! 🏍️🔥🚀"</h1>
     <br />
-    <MudCarousel Class="mud-width-full" Style="height:45vh;" AutoCycleTime="new TimeSpan(35000000)" AutoCycle="true" TData="object">
+    <MudCarousel Class="mud-width-full" Style="height:45vh;" AutoCycleTime="new TimeSpan(50000000)" AutoCycle="true" TData="object">
 
         <PreviousButtonTemplate>
             <div Class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
@@ -74,9 +75,6 @@
             </MudCarouselItem>
         </ChildContent>
     </MudCarousel>
-
-
-
 
 
 </MudContainer>
