@@ -1,8 +1,8 @@
 self.assetsManifest = {
-  "version": "hgIAYz+z",
+  "version": "VDVmGdyC",
   "assets": [
     {
-      "hash": "sha256-jXb/s/8EKHqgCjLDYf3tTaSansZuV+9KTkX+s7iU0IY=",
+      "hash": "sha256-uUjk8brxV5p7+R4sViXd3Ipv2WwE6Cl0LS3xuVWj2Mc=",
       "url": "Capybara.styles.css"
     },
     {
@@ -842,8 +842,8 @@ self.assetsManifest = {
       "url": "_framework/BootstrapBlazor.iz764a8x83.wasm"
     },
     {
-      "hash": "sha256-iId8cHewmCsjjO7dY2JjbbLlgB0H0+62/gNIxrybjDY=",
-      "url": "_framework/Capybara.0exu7v0t0v.wasm"
+      "hash": "sha256-4DFNFgjhyQKTBGD7WVCTIAiECjzPy95/ooMSyYu7FJ0=",
+      "url": "_framework/Capybara.0sflz209li.wasm"
     },
     {
       "hash": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N/oIQdCKfA=",
@@ -1206,7 +1206,7 @@ self.assetsManifest = {
       "url": "_framework/ZXingBlazor.6d6suntskg.wasm"
     },
     {
-      "hash": "sha256-C4GwXsof8m48/faOf4yOUNAEalAKDD5NHnLDRDS8ZFQ=",
+      "hash": "sha256-7z8bp2i+DEwhLQmCG3/Zjrsw+dOQqwUExg/+xCwGVKI=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1258,7 +1258,7 @@ self.assetsManifest = {
       "url": "css/animate.css"
     },
     {
-      "hash": "sha256-tsLNAT+DW5s2K0wTmIrViuDsmQPEuwHY7xXNpwPWT7M=",
+      "hash": "sha256-rv4BAsJnUCWOfONuZTlVtb+2FYJW2qnEj3LIa1IA2Ek=",
       "url": "css/app.css"
     },
     {

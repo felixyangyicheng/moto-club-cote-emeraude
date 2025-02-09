@@ -62,7 +62,7 @@ main[b-rcy5nsiigv] {
     }
 
     .sidebar[b-rcy5nsiigv] {
-        width: 250px;
+        width: 200px;
         height: 100vh;
         position: sticky;
         top: 0;
@@ -87,6 +87,50 @@ main[b-rcy5nsiigv] {
 }
 
 /* /Layout/NavMenu.razor.rz.scp.css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar-toggler[b-d2yuvkyxri] {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -195,6 +239,49 @@ main[b-rcy5nsiigv] {
 }
 
 .rotateOut[b-hxnt7b1c1w] {
+    animation-duration: 0.5s;
+    animation-name: rotateOut;
+    animation-fill-mode: forwards;
+}
+/* /Pages/Contact.razor.rz.scp.css */
+
+.bounceIn[b-3w71ggqard] {
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-name: bounceIn;
+    animation-fill-mode: forwards;
+}
+
+.bounceOut[b-3w71ggqard] {
+    animation-duration: 0.5s;
+    animation-name: bounceOut;
+    animation-fill-mode: forwards;
+}
+
+.backInDown[b-3w71ggqard] {
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-name: backInDown;
+    animation-fill-mode: forwards;
+}
+
+.backOutDown[b-3w71ggqard] {
+    animation-duration: 0.5s;
+    animation-name: backOutDown;
+    animation-fill-mode: forwards;
+}
+
+.rotateIn[b-3w71ggqard] {
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-name: rotateIn;
+    animation-fill-mode: forwards;
+}
+
+.rotateOut[b-3w71ggqard] {
     animation-duration: 0.5s;
     animation-name: rotateOut;
     animation-fill-mode: forwards;
