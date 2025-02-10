@@ -28,6 +28,7 @@ global using Capybara.Shared.Dialogs;
 global using System.Collections.Concurrent;
 global using System.Text.Json;
 global using Capybara.Shared;
+global using Capybara.Services;
 
 global using Heron.MudCalendar;
 global using ZXingBlazor.Components;

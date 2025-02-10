@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using ApexCharts;
 using Capybara.HashCheckService;
+using Capybara.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -33,9 +34,9 @@ builder.Services.AddHttpClient("fileshare.srv", client =>
 });
 builder.Services.AddBootstrapBlazor();
 builder.Services.AddSingleton<HashServiceFactory>();
+builder.Services.AddScoped<SiteMapService>();
 
-
-        builder.Services.AddMudServices(config =>
+builder.Services.AddMudServices(config =>
         {
             config.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.BottomLeft;
             config.SnackbarConfiguration.PreventDuplicates = false;

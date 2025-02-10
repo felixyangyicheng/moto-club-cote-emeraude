@@ -1,6 +1,10 @@
 ﻿@page "/siteplan"
-<h3>SitePlan</h3>
 
-@code {
+<h3>Générer et télécharger le Sitemap XML</h3>
+<br/>
+<MudButton Color="Color.Info" @onclick="DownloadSitemap">Télécharger Sitemap</MudButton>
 
+@if (!string.IsNullOrEmpty(sitemapContent))
+{
+    <pre>@(sitemapContent)</pre>
 }
