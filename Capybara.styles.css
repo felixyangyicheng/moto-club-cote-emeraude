@@ -200,9 +200,9 @@ main[b-rcy5nsiigv] {
     }
 }
 
-/* /Pages/AboutMe.razor.rz.scp.css */
+/* /Pages/About.razor.rz.scp.css */
 
-.bounceIn[b-hxnt7b1c1w] {
+.bounceIn[b-9rhcf24hr3] {
     opacity: 0;
     animation-delay: 0.5s;
     animation-duration: 0.5s;
@@ -210,13 +210,13 @@ main[b-rcy5nsiigv] {
     animation-fill-mode: forwards;
 }
 
-.bounceOut[b-hxnt7b1c1w] {
+.bounceOut[b-9rhcf24hr3] {
     animation-duration: 0.5s;
     animation-name: bounceOut;
     animation-fill-mode: forwards;
 }
 
-.backInDown[b-hxnt7b1c1w] {
+.backInDown[b-9rhcf24hr3] {
     opacity: 0;
     animation-delay: 0.5s;
     animation-duration: 0.5s;
@@ -224,13 +224,13 @@ main[b-rcy5nsiigv] {
     animation-fill-mode: forwards;
 }
 
-.backOutDown[b-hxnt7b1c1w] {
+.backOutDown[b-9rhcf24hr3] {
     animation-duration: 0.5s;
     animation-name: backOutDown;
     animation-fill-mode: forwards;
 }
 
-.rotateIn[b-hxnt7b1c1w] {
+.rotateIn[b-9rhcf24hr3] {
     opacity: 0;
     animation-delay: 0.5s;
     animation-duration: 0.5s;
@@ -238,7 +238,7 @@ main[b-rcy5nsiigv] {
     animation-fill-mode: forwards;
 }
 
-.rotateOut[b-hxnt7b1c1w] {
+.rotateOut[b-9rhcf24hr3] {
     animation-duration: 0.5s;
     animation-name: rotateOut;
     animation-fill-mode: forwards;
