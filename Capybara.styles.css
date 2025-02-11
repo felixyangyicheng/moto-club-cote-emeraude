@@ -245,46 +245,15 @@ main[b-rcy5nsiigv] {
 }
 /* /Pages/Contact.razor.rz.scp.css */
 
-.bounceIn[b-3w71ggqard] {
-    opacity: 0;
-    animation-delay: 0.5s;
-    animation-duration: 0.5s;
-    animation-name: bounceIn;
-    animation-fill-mode: forwards;
+.mcard[b-3w71ggqard] {
+
 }
 
-.bounceOut[b-3w71ggqard] {
-    animation-duration: 0.5s;
-    animation-name: bounceOut;
-    animation-fill-mode: forwards;
+.mgrid[b-3w71ggqard] {
+    margin-bottom: 10px;
 }
-
-.backInDown[b-3w71ggqard] {
-    opacity: 0;
-    animation-delay: 0.5s;
-    animation-duration: 0.5s;
-    animation-name: backInDown;
-    animation-fill-mode: forwards;
-}
-
-.backOutDown[b-3w71ggqard] {
-    animation-duration: 0.5s;
-    animation-name: backOutDown;
-    animation-fill-mode: forwards;
-}
-
-.rotateIn[b-3w71ggqard] {
-    opacity: 0;
-    animation-delay: 0.5s;
-    animation-duration: 0.5s;
-    animation-name: rotateIn;
-    animation-fill-mode: forwards;
-}
-
-.rotateOut[b-3w71ggqard] {
-    animation-duration: 0.5s;
-    animation-name: rotateOut;
-    animation-fill-mode: forwards;
+.mcarousel[b-3w71ggqard] {
+    height: 45vh;
 }
 /* /Pages/Home.razor.rz.scp.css */
 *[b-n7ttzm87hq] {
