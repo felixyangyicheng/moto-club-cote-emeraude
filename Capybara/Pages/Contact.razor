@@ -3,13 +3,18 @@
 @using Transition =MudBlazor.Transition
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <MudContainer>
-	<h1>Coordonnées </h1>
+	<br />
+<br />
+
+	<MudText Typo="Typo.h5">Coordonnées </MudText>
 	<MudGrid>
 		<MudItem lg="4" md="4" sm="12" xs="12">
-			<MudCard>
+			<MudCard >
 				
 				<MudCardContent>
 					<iframe class="streeview" src="https://www.google.com/maps/embed?pb=!3m2!1szh-CN!2sfr!4v1739190923036!5m2!1szh-CN!2sfr!6m8!1m7!1soy-EtEXEuLhdFwGgrca9uw!2m2!1d48.57930853097264!2d-2.063341328760881!3f17.929793364291037!4f0.2357507674066568!5f2.467911553752967" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<MudSpacer />
+					<MudSpacer />
 					<br />
 					<MudText Typo="Typo.h5">
 
@@ -30,7 +35,7 @@
 
 				<MudCardContent>
 					<iframe align="middle" class="streeview" src="https://www.google.com/maps/embed?pb=!4v1739097476896!6m8!1m7!1soy-EtEXEuLhdFwGgrca9uw!2m2!1d48.57930853097264!2d-2.063341328760881!3f34.774330809806216!4f1.580117945933793!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+					<MudSpacer/>
 					<br/>
 					<MudText Typo="Typo.h5">
 						<MudIcon Icon="fas fa-envelope" Color="Color.Primary" />
@@ -49,6 +54,7 @@
 			<MudCard>
 				<MudCardContent>
 					<iframe align="middle" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.070214748382569%2C48.57715370509645%2C-2.0564174652099614%2C48.5816964225991&amp;layer=transportmap&amp;marker=48.5794321707394%2C-2.0633161067962646" style="border: 1px solid black"></iframe>
+					<MudSpacer />
 					<br/>
 					<MudText Typo="Typo.h5">
 						<MudIcon Icon="fas fa-house" Color="Color.Primary" />
