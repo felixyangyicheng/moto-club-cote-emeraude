@@ -13,7 +13,9 @@ const pages = [
 ];
 
 (async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
     for (const pageInfo of pages) {
         const page = await browser.newPage();
         await page.goto(pageInfo.url, { waitUntil: 'networkidle2' });
