@@ -30,7 +30,16 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 9.0.x
+      # 3. Installer Node.js (nécessaire pour exécuter generate-static.js)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
 
+      # 4. Installer les dépendances Node (si vous avez un fichier package-lock.json)
+      - name: Install Node.js dependencies
+        run: npm ci
+        
       # Install dotnet wasm buildtools workload
       - name: Install .NET WASM Build Tools
         run: dotnet workload install wasm-tools
@@ -38,6 +47,13 @@ jobs:
       # Restore Dependencies
       - name: Restore dependencies
         run: dotnet restore ./Capybara/Capybara.csproj
+      # 7. Compiler et publier le projet Blazor en mode Release avec AOT activé
+      #- name: Build and publish Blazor project with AOT
+       # run: dotnet publish -c Release -p:PublishAot=true -p:RunAOTCompilation=true -o publish
+
+      # 8. Exécuter le script de génération statique pour créer des snapshots HTML
+      - name: Run generate-static.js to generate static snapshots
+        run: node scripts/generate-static.js
 
       # Check Vulnerable Nuget Packages
       - name: Checking Vulnerable Nuget Packages
