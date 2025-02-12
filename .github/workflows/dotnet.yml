@@ -36,9 +36,11 @@ jobs:
         with:
           node-version: '16'
 
-      # 4. Installer les dépendances Node (si vous avez un fichier package-lock.json)
-      - name: Install Node.js dependencies
-        run: npm install
+      # 4. Créer un package.json minimal et installer Puppeteer (puisqu'il n'existe pas dans le dépôt)
+      - name: Setup Node environment for static generation
+        run: |
+          echo '{}' > package.json
+          npm install puppeteer
         
       # Install dotnet wasm buildtools workload
       - name: Install .NET WASM Build Tools
