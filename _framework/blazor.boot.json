@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Capybara",
   "resources": {
-    "hash": "sha256-5oLhYmw5U5FkQufrmNhr9yWrmc9OetBmc/rM3qzfPGM=",
+    "hash": "sha256-U0tN60Ya8g+zi8sIrWIYm6D3r+QwzH2n13SbLRb9G+U=",
     "fingerprinting": {
       "Blazor-ApexCharts.6b6iblr64n.wasm": "Blazor-ApexCharts.wasm",
       "BlazorComponentUtilities.xvp2iu6t3r.wasm": "BlazorComponentUtilities.wasm",
@@ -10,7 +10,7 @@
       "BootstrapBlazor.Markdown.4h5fj7ltpp.wasm": "BootstrapBlazor.Markdown.wasm",
       "BootstrapBlazor.tg86e4dvpa.wasm": "BootstrapBlazor.wasm",
       "BootstrapBlazor.WebAPI.0yo2sr195f.wasm": "BootstrapBlazor.WebAPI.wasm",
-      "Capybara.rk1ow3aouc.wasm": "Capybara.wasm",
+      "Capybara.o1opqlvded.wasm": "Capybara.wasm",
       "CsvHelper.t2en4y4q4i.wasm": "CsvHelper.wasm",
       "JiuLing.CommonLibs.ui7v5supcs.wasm": "JiuLing.CommonLibs.wasm",
       "Microsoft.AspNetCore.Authorization.lkpa9nz491.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -104,7 +104,7 @@
       "zxing.3wc3adt5yb.wasm": "zxing.wasm",
       "ZXingBlazor.xzpmx9u53i.wasm": "ZXingBlazor.wasm",
       "dotnet.native.9y1xcirhrf.js": "dotnet.native.js",
-      "dotnet.native.l15uz96fl3.wasm": "dotnet.native.wasm",
+      "dotnet.native.32ln4jlbpi.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.tsg4gsv2hg.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
@@ -118,7 +118,7 @@
       "dotnet.runtime.tsg4gsv2hg.js": "sha256-82FoDmY+LsehdN2u8aSGEutGEKXJHcYaSX/3zptbsCw="
     },
     "wasmNative": {
-      "dotnet.native.l15uz96fl3.wasm": "sha256-CVzXqiVdwYcEQKViA1TMuxYAAby3sNQUhtrPgWQAkkg="
+      "dotnet.native.32ln4jlbpi.wasm": "sha256-W4qrVKg308JhmWqDgBu7rkaPvOErWvepXifVWq09YlQ="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -133,7 +133,7 @@
       "BootstrapBlazor.Markdown.4h5fj7ltpp.wasm": "sha256-eMiCBCOVNE8epYW1ZyFZYUmMAvVTMwap7fKvbMuA55U=",
       "BootstrapBlazor.tg86e4dvpa.wasm": "sha256-XV50TJJ8IlJ6KB5KgXuH5ya0E9JNki4YREmZe/TIz9Y=",
       "BootstrapBlazor.WebAPI.0yo2sr195f.wasm": "sha256-yCK/lycvAvYFjO59QRv1NTl1H4hMpew2cKbGQZeFnX8=",
-      "Capybara.rk1ow3aouc.wasm": "sha256-BTaQ+tmeKSDwX5ChlctnKhRlI8R6HAgmo1wD9RYGsZo=",
+      "Capybara.o1opqlvded.wasm": "sha256-/EOK4VekW2Eo/B/HoqOQsJBuPCz/iK3wpuKMMqA0ihM=",
       "CsvHelper.t2en4y4q4i.wasm": "sha256-BbM7TqLTlJASaH0gxpRVBP/thFJFq2ttJl6CVU5bs5w=",
       "JiuLing.CommonLibs.ui7v5supcs.wasm": "sha256-KpMrwSa7cGrqCO9MQdCnL/fX+XtjoeiTV0PYLCYvC+I=",
       "Microsoft.AspNetCore.Authorization.lkpa9nz491.wasm": "sha256-9TQIcOqEtH4hfXaKUWzU5LrAe+pcQzRbIusSNggCtvk=",
