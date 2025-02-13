@@ -50,8 +50,8 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore ./Capybara/Capybara.csproj
       # 7. Compiler et publier le projet Blazor en mode Release avec AOT activé
-      #- name: Build and publish Blazor project with AOT
-       # run: dotnet publish -c Release -p:PublishAot=true -p:RunAOTCompilation=true -o publish
+      - name: Build and publish Blazor project with AOT
+        run: dotnet publish -c Release -p:PublishAot=true -p:RunAOTCompilation=true -o publish
 
       # 8. Exécuter le script de génération statique pour créer des snapshots HTML
       - name: Run generate-static.js to generate static snapshots
