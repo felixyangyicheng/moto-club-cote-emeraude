@@ -1,11 +1,6 @@
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using ApexCharts;
+
 using Capybara.HashCheckService;
-using Capybara.Services;
-using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

@@ -9,7 +9,7 @@ global using System.Runtime.InteropServices;
 global using Microsoft.AspNetCore.Components.Web;
 global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 global using Capybara;
-
+global using System.Text;
 
 global using MudBlazor.Services;
 global using MudBlazor;
