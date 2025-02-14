@@ -17,7 +17,7 @@
 		<BlazorWebAssemblyLoadAllGlobalizationData>false</BlazorWebAssemblyLoadAllGlobalizationData>
 		<!-- Active la compilation AOT -->
 		<!--<PublishAot>true</PublishAot>-->
-		<RunAOTCompilation>true</RunAOTCompilation>
+		<!--<RunAOTCompilation>true</RunAOTCompilation>-->
 		
 		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>
     </PropertyGroup>
