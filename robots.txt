@@ -1,3 +1,0 @@
-﻿User-agent: *
-Allow: /
-Sitemap: https://moto-club-cote-emeraude.pages.dev/sitemap.xml
