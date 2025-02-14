@@ -1,14 +1,14 @@
 {
   "mainAssemblyName": "Capybara",
   "resources": {
-    "hash": "sha256-YFc9s6ZafVLbhizejHDzie9DrUV+t+qYIx0tNRmRo8k=",
+    "hash": "sha256-XycKiBU55T1PBVyKvnabrl+E6eOrtmkKUpf4GMrUKhQ=",
     "fingerprinting": {
       "BlazorComponentUtilities.jrk97nw8r4.wasm": "BlazorComponentUtilities.wasm",
       "BlazorPro.Spinkit.xgohbmf257.wasm": "BlazorPro.Spinkit.wasm",
       "BlazorTypewriter.nd3iuu5wq6.wasm": "BlazorTypewriter.wasm",
       "BootstrapBlazor.rt49smg8p8.wasm": "BootstrapBlazor.wasm",
       "BootstrapBlazor.WebAPI.1cl339xwip.wasm": "BootstrapBlazor.WebAPI.wasm",
-      "Capybara.5p2g3ennwx.wasm": "Capybara.wasm",
+      "Capybara.u1yv544v4r.wasm": "Capybara.wasm",
       "Microsoft.AspNetCore.Authorization.slxevey7kd.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.Authorization.53d64ujug7.wasm": "Microsoft.AspNetCore.Components.Authorization.wasm",
       "Microsoft.AspNetCore.Components.Forms.l7mve4be2c.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
@@ -120,7 +120,7 @@
       "BlazorTypewriter.nd3iuu5wq6.wasm": "sha256-ZbittBGHjmbJEXJwXImlPlYJ78EDAcRA3FWgjO8zuXw=",
       "BootstrapBlazor.rt49smg8p8.wasm": "sha256-rzSKLQGQBDtsClZ40cBIUYqIrwFN4y9umpfPwUtEm/g=",
       "BootstrapBlazor.WebAPI.1cl339xwip.wasm": "sha256-wUWuOXjm0yd4EGJHfwNhBCEd0UCkrhgcsZV7scfl/6o=",
-      "Capybara.5p2g3ennwx.wasm": "sha256-qXzTZz6cXe0mg+2//PP0su/S6YWJ4yY1iM54eNtYno8=",
+      "Capybara.u1yv544v4r.wasm": "sha256-3oyI52wOAETAi1OAaRVVEz4dq37NzV1DSjNlfve6dGU=",
       "Microsoft.AspNetCore.Authorization.slxevey7kd.wasm": "sha256-oPg1uUDkkldyCub2SMHh8wQpAfPY4Y1o52G6YtaMcFc=",
       "Microsoft.AspNetCore.Components.Authorization.53d64ujug7.wasm": "sha256-PwzAM00p2oWj2JlPOBeeYxpdTmSnNI+fi2LdHzgN55M=",
       "Microsoft.AspNetCore.Components.Forms.l7mve4be2c.wasm": "sha256-MRCXMeMGIVN2kR25xZjU/Nc9gHzQXLnTMF8IODeI85I=",
