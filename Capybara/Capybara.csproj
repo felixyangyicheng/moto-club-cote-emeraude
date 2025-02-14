@@ -16,7 +16,7 @@
 		<BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
 		<BlazorWebAssemblyLoadAllGlobalizationData>false</BlazorWebAssemblyLoadAllGlobalizationData>
 		<!-- Active la compilation AOT -->
-		<PublishAot>true</PublishAot>
+		<!--<PublishAot>true</PublishAot>-->
 		<RunAOTCompilation>true</RunAOTCompilation>
 		
 		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>
