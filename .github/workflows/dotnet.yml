@@ -107,6 +107,7 @@ jobs:
           echo "/index.html  / 301!" > dist/Capybara/wwwroot/_redirects
           echo "/index.php   / 301!" >> dist/Capybara/wwwroot/_redirects       
           echo "https://www.moto-club-cote-emeraude.pages.dev/*  https://moto-club-cote-emeraude.pages.dev/:splat 301!" >> dist/Capybara/wwwroot/_redirects
+          echo "/  https://moto-club-cote-emeraude.pages.dev 301!" >> dist/Capybara/wwwroot/_redirects
       - name: Rewrite base href
         uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
         with:
