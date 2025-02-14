@@ -10,10 +10,10 @@
 		<BlazorWasmPrerenderingMode>WebAssemblyPrerendered</BlazorWasmPrerenderingMode>
 		<BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
 		<BlazorWebAssemblyLoadAllGlobalizationData>false</BlazorWebAssemblyLoadAllGlobalizationData>
-		<!--<PublishTrimmed>true</PublishTrimmed>
+		<PublishTrimmed>true</PublishTrimmed>
 		<TrimMode>link</TrimMode>
 		<RunAOTCompilation>true</RunAOTCompilation>
-		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>-->
+		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>
     </PropertyGroup>
 
     <ItemGroup>
