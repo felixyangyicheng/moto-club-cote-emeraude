@@ -89,7 +89,7 @@ jobs:
       - name: Insert last modification date into index.html
         run: |
           BUILD_TIME=$(date +"%Y-%m-%dT%H:%M:%S%z")
-          sed -i '/© Copyright MCCE\/Moto Club of the Emerald Coast, moto club Pleurtuit/ a <p>Build Time: ${BUILD_TIME}<\/p>' ./Capybara/wwwroot/index.html
+            sed -i '/© Copyright MCCE\/Moto Club of the Emerald Coast, moto club Pleurtuit/ a\ <p>Build Time: '"$BUILD_TIME"'</p>' ./Capybara/wwwroot/index.html
       # Publishes Blazor project to the release-folder
       - name: Publish Blazor Project
         run: dotnet publish ./Capybara.sln -c:Release -p:GHPages=true -o dist/Capybara --nologo
