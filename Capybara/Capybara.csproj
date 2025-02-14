@@ -8,12 +8,18 @@
 		<BlazorWebAssemblyPreserveCollationData>false</BlazorWebAssemblyPreserveCollationData>
 		<BlazorWasmPrerenderingDeleteLoadingContents>true</BlazorWasmPrerenderingDeleteLoadingContents>	
 		<BlazorWasmPrerenderingMode>WebAssemblyPrerendered</BlazorWasmPrerenderingMode>
+		
+		<!-- Active le trimming pour supprimer le code inutilisé -->
+		<PublishTrimmed>true</PublishTrimmed>
+		<TrimMode>link</TrimMode>
+		<!-- Désactive la prise en charge complète des fuseaux horaires et de la globalisation si non nécessaire -->
 		<BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
 		<BlazorWebAssemblyLoadAllGlobalizationData>false</BlazorWebAssemblyLoadAllGlobalizationData>
-		<!--<PublishTrimmed>true</PublishTrimmed>
-		<TrimMode>link</TrimMode>
+		<!-- Active la compilation AOT -->
+		<PublishAot>true</PublishAot>
 		<RunAOTCompilation>true</RunAOTCompilation>
-		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>-->
+		
+		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>
     </PropertyGroup>
 
     <ItemGroup>
