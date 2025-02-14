@@ -101,7 +101,11 @@ jobs:
             cp dist/Capybara/wwwroot/index.html dist/Capybara/wwwroot/404.html    
             sed -i '$d' dist/Capybara/wwwroot/README.md  
             echo "Dernière modification: $(date +"%Y-%m-%dT%I:%M:%pZ")" >> dist/Capybara/wwwroot/README.md 
-          
+      # Redirect from index pages (.html and .php) configured       
+      - name: Create _redirects file for Cloudflare Pages
+        run: |
+          echo "/index.html  / 301!" > dist/Capybara/wwwroot/_redirects
+          echo "/index.php   / 301!" >> dist/Capybara/wwwroot/_redirects       
 
       - name: Rewrite base href
         uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
