@@ -22,31 +22,35 @@ namespace Capybara.Services
 
         public async Task<bool> ForgotPassword(ForgotPasswordModel user)
         {
-            var response = await _client.PostAsJsonAsync(Endpoint.ForgotPasswordEndpoint, user);
-            if (!response.IsSuccessStatusCode)
-            {
-                return false;
-            }
-            return true;
+            //var response = await _client.PostAsJsonAsync(Endpoint.ForgotPasswordEndpoint, user);
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    return false;
+            //}
+            //return true;
+
+            throw new NotImplementedException();
         }
 
         public async Task<bool> Login(LoginModel user)
         {
-            var response = await _client.PostAsJsonAsync(Endpoint.LoginEndpoint, user);
-            if (!response.IsSuccessStatusCode)
-            {
-                return false;
-            }
-            var content = await response.Content.ReadAsStringAsync();
-            var token = JsonSerializer.Deserialize<TokenResponse>(content);
-            //Store Token
-            await _localStorage.SetItemAsync("authToken", token.Token);
-            //Change auth state of app
-            await ((ApiAuthenticationStateProvider)_authenticationStateProvider)
-                .LoggedIn();
-            _client.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue("bearer", token.Token);
-            return true;
+            //var response = await _client.PostAsJsonAsync(Endpoint.LoginEndpoint, user);
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    return false;
+            //}
+            //var content = await response.Content.ReadAsStringAsync();
+            //var token = JsonSerializer.Deserialize<TokenResponse>(content);
+            ////Store Token
+            //await _localStorage.SetItemAsync("authToken", token.Token);
+            ////Change auth state of app
+            //await ((ApiAuthenticationStateProvider)_authenticationStateProvider)
+            //    .LoggedIn();
+            //_client.DefaultRequestHeaders.Authorization =
+            //    new AuthenticationHeaderValue("bearer", token.Token);
+            //return true;
+            throw new NotImplementedException();
+
         }
 
 
@@ -60,32 +64,38 @@ namespace Capybara.Services
 
         public async Task<bool> Register(RegisterModel user)
         {
-            var response = await _client.PostAsJsonAsync(Endpoint.RegisterEndpoint, user);
-            if (!response.IsSuccessStatusCode)
-            {
-                return false;
-            }
-            return true;
+            //var response = await _client.PostAsJsonAsync(Endpoint.RegisterEndpoint, user);
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    return false;
+            //}
+            //return true;
+            throw new NotImplementedException();
+
         }
 
         public async Task<bool> ResetForgottenPassword(ResetForgottenPasswordModel user)
         {
-            var response = await _client.PostAsJsonAsync(Endpoint.ResetForgottenPasswordEndpoint, user);
-            if (!response.IsSuccessStatusCode)
-            {
-                return false;
-            }
-            return true;
+            //var response = await _client.PostAsJsonAsync(Endpoint.ResetForgottenPasswordEndpoint, user);
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    return false;
+            //}
+            //return true;
+            throw new NotImplementedException();
+
         }
 
         public async Task<bool> ResetPassword(ResetPasswordModel user)
         {
-            var response = await _client.PostAsJsonAsync(Endpoint.ResetPasswordEndpoint, user);
-            if (!response.IsSuccessStatusCode)
-            {
-                return false;
-            }
-            return true;
+            //var response = await _client.PostAsJsonAsync(Endpoint.ResetPasswordEndpoint, user);
+            //if (!response.IsSuccessStatusCode)
+            //{
+            //    return false;
+            //}
+            //return true;
+            throw new NotImplementedException();
+
         }
     }
 

@@ -5,13 +5,14 @@ global using System.Diagnostics.CodeAnalysis;
 global using System.Linq;
 global using System.Threading.Tasks;
 global using System.IdentityModel.Tokens.Jwt;
-global using Microsoft.AspNetCore.Components;
-
 global using System.Runtime.InteropServices;
+global using System.Text;
+global using Microsoft.AspNetCore.Components;
+global using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+ 
 global using Microsoft.AspNetCore.Components.Web;
 global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 global using Capybara;
-global using System.Text;
 
 global using MudBlazor.Services;
 global using MudBlazor;
