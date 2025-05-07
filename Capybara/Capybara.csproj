@@ -25,10 +25,11 @@
 	<ItemGroup>
 		<PackageReference Include="BlazorTypewriter" Version="1.1.0" />
 		<PackageReference Include="BootstrapBlazor.WebAPI" Version="9.0.0" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.2" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.2" PrivateAssets="all" />
-		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.2" />
-		<PackageReference Include="MudBlazor" Version="8.2.0" />
+		<PackageReference Include="BwGoogleAuth" Version="1.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.4" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.4" />
+		<PackageReference Include="MudBlazor" Version="8.6.0" />
 		<PackageReference Include="BlazorPro.Spinkit" Version="1.2.0" />
 		<PackageReference Include="System.Private.Uri" Version="4.3.2" />
 		<PackageReference Include="ToolBelt.Web.CssClassInlineBuilder" Version="3.1.0.1" />
