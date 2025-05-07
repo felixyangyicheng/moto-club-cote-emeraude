@@ -17,12 +17,13 @@
 		<BlazorWebAssemblyLoadAllGlobalizationData>false</BlazorWebAssemblyLoadAllGlobalizationData>
 		<!-- Active la compilation AOT -->
 		<!--<PublishAot>true</PublishAot>-->
-		<RunAOTCompilation>true</RunAOTCompilation>
+		<!--<RunAOTCompilation>true</RunAOTCompilation>-->
 
 		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
 		<PackageReference Include="BlazorTypewriter" Version="1.1.0" />
 		<PackageReference Include="BootstrapBlazor.WebAPI" Version="9.0.0" />
 		<PackageReference Include="BwGoogleAuth" Version="1.0.1" />

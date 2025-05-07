@@ -6,24 +6,29 @@
 <MudPopoverProvider />
 <MudSnackbarProvider />
 
-<MudLayout >
+<MudLayout>
     <MudAppBar Style="@(_bgCyanLighten1)">
         <MudButton Variant='Variant.Text' Style="@(_bgCyanLighten1)" OnClick='DrawerToggle'>
             <img src="img/Moto-club.png" style="height:calc(2.575rem + .5vw)" />
         </MudButton>
         <MudSpacer />
-        <MudText Typo="Typo.h6 " >Moto Club Côte d'Emeraude </MudText>
+        <MudText Typo="Typo.h6 ">Moto Club Côte d'Emeraude </MudText>
         <a src="https://www.facebook.com/groups/3406511032976994" title="Facebook Moto Club de la Côte d'Emeraude">
             <MudIcon Icon="@Icons.Custom.Brands.Facebook" a>
-   
+
             </MudIcon>
-            </a> 
+        </a>
+
+        <GoogleAuth Hide=true
+                    ClientId="585473493833-qbr1pl7crit2rt70i5lppecp6ibrvebn.apps.googleusercontent.com"
+                    @bind-UserCredential=@usercredential />
+
     </MudAppBar>
     <MudDrawer @bind-Open='@_drawerOpen'>
-        <NavMenu/>
+        <NavMenu />
     </MudDrawer>
     <MudMainContent>
-        <MudContainer  >
+        <MudContainer>
             @Body
         </MudContainer>
 
@@ -35,6 +40,8 @@
 @code {
     bool _drawerOpen = true;
     string _bgCyanLighten1 = $"background:{Colors.Cyan.Lighten1};";
+
+    public Credential usercredential = new Credential();
     MudTheme CustomTheme = new MudTheme()
         {
             Typography = new Typography()
@@ -46,9 +53,9 @@
                     FontWeight = "700",
                     LineHeight = "1.2",
                     LetterSpacing = ".0075em",
-                    
+
                 },
-                    H5 = new H6Typography()
+                H5 = new H6Typography()
                 {
                     FontFamily = new[] { "Poppins" },
                     FontSize = "calc(1.075rem + .3vw)",
