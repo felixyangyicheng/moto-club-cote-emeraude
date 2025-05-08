@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "EZvfSq4Y",
+  "version": "2eBHrmrd",
   "assets": [
     {
       "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
@@ -514,8 +514,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-DNH1gLlMufbkjMa7wLxmHlavVrqXwfQNjUcTvZJ0Mr8=",
-      "url": "_framework/Capybara.wd8a6wagac.wasm"
+      "hash": "sha256-9g5JINqj86JG9bb10zwYaghrucL9WjC+5zDPBT4Zms8=",
+      "url": "_framework/Capybara.i92izcocjt.wasm"
     },
     {
       "hash": "sha256-/lGmebPvAOERloWb4kB6LJdjVdLjF71fUwNgu0VAi2I=",
@@ -666,8 +666,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.JSInterop.WebAssembly.lsljofql11.wasm"
     },
     {
-      "hash": "sha256-o8Xv8ODqwJ3xEw7r/NUI7s8y7u9awoIDJ8x2PbiyvcY=",
-      "url": "_framework/MudBlazor.ptvplabe0r.wasm"
+      "hash": "sha256-6E93a7LliVRVXwPR2YBZUD4TXLIfsdXeIrkU4Z5F170=",
+      "url": "_framework/MudBlazor.k52wlep3a9.wasm"
     },
     {
       "hash": "sha256-rLpnSbypzpFbHDTLfRAyoSmPGs9bCHrB8IWuYwryTts=",
@@ -942,7 +942,7 @@ self.assetsManifest = {
       "url": "_framework/UAParser.o84k4c0k2d.wasm"
     },
     {
-      "hash": "sha256-YIyGfj0ex9ZNKk2iryV9uFfBfnr73Av/4vwwGwWISnE=",
+      "hash": "sha256-fbT/BA6VEzkZUwmOP+Rtt4t51ZdwPnrv2Ne7Q5x2cxk=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1026,7 +1026,7 @@ self.assetsManifest = {
       "url": "img/Moto-club.png"
     },
     {
-      "hash": "sha256-7tHeB5DuB9z4rhsj+WMhmiDwOoGaSSl2q5ab1I36+Uk=",
+      "hash": "sha256-BTPY0tiMAgcOZdIjVMMOGT6YO6FbMUKqFGtV940HIi4=",
       "url": "index.html"
     },
     {
@@ -1038,7 +1038,7 @@ self.assetsManifest = {
       "url": "js/generate-static.js"
     },
     {
-      "hash": "sha256-tFYaXtyWtbNUJ4grc27oi5xTEZc3/Tf85RnduYWMxLI=",
+      "hash": "sha256-E3FxaNybf8RMo7MweHAyvLNUoBtvnWXe1trWmsbi0Sc=",
       "url": "js/googleAuth.js"
     },
     {

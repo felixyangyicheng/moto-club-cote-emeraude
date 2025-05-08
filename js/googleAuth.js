@@ -7,7 +7,7 @@ gajs.initGoogle = function (dotNetObjectRef, clientid) {
 
     handleCredentialResponse = function (response) {
 
-        console.log("Encoded JWT ID token: " + response.credential);
+        //console.log("Encoded JWT ID token: " + response.credential);
 
         dotNetObjectRef.invokeMethodAsync('SaveCredentials', response.credential);
     }
@@ -20,5 +20,5 @@ gajs.initGoogle = function (dotNetObjectRef, clientid) {
         document.getElementById("buttonDiv"),
         { theme: "outline", size: "large" }  // customization attributes
     );
-    //  google.accounts.id.prompt(); // also display the One Tap dialog
+      google.accounts.id.prompt(); // also display the One Tap dialog
 }
