@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+        @inject IJSRuntime JSRuntime
 
 
 <MudThemeProvider Theme="@CustomTheme" />
@@ -13,25 +14,38 @@
         </MudButton>
         <MudSpacer />
         <MudText Typo="Typo.h6 ">Moto Club Côte d'Emeraude </MudText>
-        <a src="https://www.facebook.com/groups/3406511032976994" title="Facebook Moto Club de la Côte d'Emeraude">
-            <MudIcon Icon="@Icons.Custom.Brands.Facebook" a>
 
-            </MudIcon>
-        </a>
+
+        <MudButton OnClick="OpenFacebook" StartIcon="@Icons.Custom.Brands.Facebook" Size="Size.Large" Color="Color.Info" Variant="Variant.Text"></MudButton>
+
+        <MudSpacer />
+
 
         <GoogleAuth Hide=true
                     ClientId="585473493833-qbr1pl7crit2rt70i5lppecp6ibrvebn.apps.googleusercontent.com"
                     @bind-UserCredential=@usercredential />
 
     </MudAppBar>
-    <MudDrawer @bind-Open='@_drawerOpen'>
+    <MudDrawer @bind-Open='@_drawerOpen' ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
     </MudDrawer>
     <MudMainContent>
         <MudContainer>
             @Body
         </MudContainer>
+        <footer>
 
+            <div id="disclaimer">
+                <p>
+                    © 2025 MCCE/Moto club Pleurtuit, Moto Club de la Côte d'Émeraude. Tous droits réservés.
+                </p>
+                <p>
+                    © Copyright MCCE/Moto Club of the Emerald Coast, moto club Pleurtuit
+                </p>
+                <a href="https://moto-club-cote-emeraude.pages.dev/legal">Mentions légales</a>
+                <a href="https://moto-club-cote-emeraude.pages.dev/siteplan">Plan du site</a>
+            </div>
+        </footer>
     </MudMainContent>
 
 </MudLayout>
@@ -42,6 +56,11 @@
     string _bgCyanLighten1 = $"background:{Colors.Cyan.Lighten1};";
 
     public Credential usercredential = new Credential();
+
+    private async Task OpenFacebook()
+    {
+        await JSRuntime.InvokeVoidAsync("open", "https://www.facebook.com/groups/3406511032976994", "https://www.facebook.com/groups/3406511032976994");
+    }
     MudTheme CustomTheme = new MudTheme()
         {
             Typography = new Typography()
