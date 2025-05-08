@@ -5,7 +5,9 @@
 
 @if (UserCredential.IsLogged & Hide)
 {
-
+    <MudAvatar  >
+        <MudImage Src="@UserCredential.Avatar" ></MudImage>
+    </MudAvatar>
 }
 else
 {

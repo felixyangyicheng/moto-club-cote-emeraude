@@ -8,7 +8,13 @@ namespace Capybara.Components.Authentication
         [Parameter, NotNull]
         public String ClientId { get; set; } = "";
 
+        /// <summary>
+        /// documentation: https://developers.google.com/identity/gsi/web/reference/js-reference?hl=zh-cn#CredentialResponse
+        /// </summary>
+        /// 
+        //[Parameter, NotNull]
 
+        //public string RedirectUri { get; set; } = "";
         [Parameter]
         public bool Hide { get; set; } = false;
 
@@ -49,7 +55,7 @@ namespace Capybara.Components.Authentication
             UserCredential.UserId = (string)decodedValue.Payload["sub"];
 
             UserCredential.Name = (string)decodedValue.Payload["given_name"];
-            UserCredential.Avatar = (string)decodedValue.Payload["photo"];
+            UserCredential.Avatar = (string)decodedValue.Payload["picture"];
 
 
 
