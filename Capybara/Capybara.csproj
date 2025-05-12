@@ -28,6 +28,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
+		<PackageReference Include="BlazorTurnstile" Version="2.1.1" />
 		<PackageReference Include="BlazorTypewriter" Version="1.1.0" />
 		<PackageReference Include="BootstrapBlazor.WebAPI" Version="9.0.0" />
 		<PackageReference Include="BwGoogleAuth" Version="1.0.1" />
