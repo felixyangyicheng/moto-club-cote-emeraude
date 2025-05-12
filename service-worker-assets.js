@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "kBhG3UCV",
+  "version": "OKlUebdT",
   "assets": [
     {
       "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
@@ -12,6 +12,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-J9TSWXigooGb+fEnncVdFuj6SELM47vT/6atUOfWdVA=",
       "url": "_content/BlazorPro.Spinkit/spinkit.min.css"
+    },
+    {
+      "hash": "sha256-XtBKcK7aBerj43ZGU5lUq8zTeNW67TLcY3JJ8nBFPjA=",
+      "url": "_content/BlazorTurnstile/interop.js"
     },
     {
       "hash": "sha256-/p5aH5Ive3UyD+SSygCTrCEe/z3Tj+j/+XmUSbfy8Q4=",
@@ -494,6 +498,10 @@ self.assetsManifest = {
       "url": "_framework/BlazorPro.Spinkit.xgohbmf257.wasm"
     },
     {
+      "hash": "sha256-EOM2mTInt/KtUoZxz+ZcobN7l8P5cllKJsrk5oXods8=",
+      "url": "_framework/BlazorTurnstile.4nfv4yzdur.wasm"
+    },
+    {
       "hash": "sha256-ZbittBGHjmbJEXJwXImlPlYJ78EDAcRA3FWgjO8zuXw=",
       "url": "_framework/BlazorTypewriter.nd3iuu5wq6.wasm"
     },
@@ -514,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-dw2Tg+AorxKShfcJvEsDk/Bn/F4woI03bP+PNn24dRQ=",
-      "url": "_framework/Capybara.5pggq8kmjm.wasm"
+      "hash": "sha256-b0UNy3QPK07cQYxiDdFhO+AwvfmzpiIgF+vIuyNu5qQ=",
+      "url": "_framework/Capybara.x0bjwb9h2g.wasm"
     },
     {
       "hash": "sha256-/lGmebPvAOERloWb4kB6LJdjVdLjF71fUwNgu0VAi2I=",
@@ -902,8 +910,8 @@ self.assetsManifest = {
       "url": "_framework/System.Text.Encodings.Web.7anapu1gfr.wasm"
     },
     {
-      "hash": "sha256-XTvMPYM20M32kb5RAgE0+T2FkJIYzK0CiH2W55vFh84=",
-      "url": "_framework/System.Text.Json.34xs6mlg3m.wasm"
+      "hash": "sha256-RwIWo51YX4ecvLExGJg2Pgz8lH9chWEgwcaDyTJ/+K0=",
+      "url": "_framework/System.Text.Json.9kuoxjab1z.wasm"
     },
     {
       "hash": "sha256-G8XPTsybDJiUAYoEP8NNjavNua5/acOix7a1JWo7O2o=",
@@ -942,7 +950,7 @@ self.assetsManifest = {
       "url": "_framework/UAParser.o84k4c0k2d.wasm"
     },
     {
-      "hash": "sha256-hwwY3OETDphdLmN4o+00PhFEUzhPaHwDKXdO+fhbeUs=",
+      "hash": "sha256-ceNrPNUlu0aONFfHLS7V4lwQkwL0jd97Qum1PVA56IA=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1026,7 +1034,7 @@ self.assetsManifest = {
       "url": "img/Moto-club.png"
     },
     {
-      "hash": "sha256-iLJ2kNGxcc6w641aljtxrj98deaAmAqp2SghqX8a8T4=",
+      "hash": "sha256-+2hAP6Q90Ho5adUZSB9wfveGmQVvx6fNL4tFWrIfOeg=",
       "url": "index.html"
     },
     {
