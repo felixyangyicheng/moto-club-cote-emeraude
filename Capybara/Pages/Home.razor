@@ -63,14 +63,7 @@
     <br />
     <br />
     <br />
-    <Turnstile @bind-Token="@_turnstileToken"
-               SiteKey="0x4AAAAAABcyIhVKJBHDrxGr"
-               Appearance="@TurnstileAppearance.Always"
-               Execution="@TurnstileExecution.Render"
-               Theme="@TurnstileTheme.Light"
-               OnCallback="@TurnstileCallback"
-               OnErrorCallback="@TurnstileErrorCallback"
-               ResponseField="@false" />
+
     <MudText Typo="Typo.h6" align="MudBlazor.Align.Center">Coucou 👋, Nous sommes le moto club de la côte d'Emeraude! ✌🏼</MudText>
     <br />
     <h1 align="center"><Typewriter Builder="@typewriter" /></h1>
@@ -172,7 +165,14 @@
         </ChildContent>
     </MudCarousel>
 
-
+    <Turnstile @bind-Token="@_turnstileToken"
+               SiteKey="0x4AAAAAABcyIhVKJBHDrxGr"
+               Appearance="@TurnstileAppearance.Always"
+               Execution="@TurnstileExecution.Render"
+               Theme="@TurnstileTheme.Light"
+               OnCallback="@TurnstileCallback"
+               OnErrorCallback="@TurnstileErrorCallback"
+               ResponseField="@false" />
 </MudContainer>
 
 @code {
