@@ -1,6 +1,8 @@
 
 using Capybara.HashCheckService;
 using Capybara.Providers;
+using GraphQL.Client.Http;
+using GraphQL.Client.Serializer.SystemTextJson;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -20,11 +22,26 @@ builder.Services.AddHttpClient("notification.push.srv.local", client =>
     {
         client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("notification.push.srv.local") ?? throw new ArgumentException());
     });
+
+builder.Services.AddScoped(sp => new GraphQLHttpClient(
+    new GraphQLHttpClientOptions
+    {
+        EndPoint = new Uri(builder.Configuration.GetValue<string>("graphsql.api.local") ?? throw new ArgumentException()),
+    },
+    new SystemTextJsonSerializer(),
+    sp.GetRequiredService<IHttpClientFactory>().CreateClient()));
 #else
     builder.Services.AddHttpClient("notification.push.srv", client =>
     {
         client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("notification.push.srv") ?? throw new ArgumentException());
     });
+    builder.Services.AddScoped(sp => new GraphQLHttpClient(
+    new GraphQLHttpClientOptions
+    {
+        EndPoint = new Uri(builder.Configuration.GetValue<string>("graphsql.api") ?? throw new ArgumentException()),
+    },
+    new SystemTextJsonSerializer(),
+    sp.GetRequiredService<IHttpClientFactory>().CreateClient()));
 #endif
 builder.Services.AddHttpClient("fileshare.srv", client =>
 {

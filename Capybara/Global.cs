@@ -33,7 +33,10 @@ global using System.Collections.Concurrent;
 global using System.Text.Json;
 global using Capybara.Shared;
 
-
+global using Capybara.Models.GraphQL;
+global using GraphQL;
+global using GraphQL.Client.Abstractions;
+global using GraphQL.Client.Http;
 
 global using Color = MudBlazor.Color;
 global using Console = System.Console;
