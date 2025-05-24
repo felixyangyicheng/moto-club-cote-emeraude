@@ -63,7 +63,7 @@ namespace Capybara.Pages
 
                 foreach (var item in mediaAssets)
                 {
-                    Console.WriteLine(item.Path);
+                    Console.WriteLine($"https://mcce.duckdns.org{item.Path}" );
                 }
                 await InvokeAsync(StateHasChanged);
             }
