@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "BPiDR7T8",
+  "version": "PtgcvjI3",
   "assets": [
     {
       "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
@@ -522,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-86eQj9N6RyxzhEdhIN9mEwKZ3/yptj/vRKuLYGQbtNs=",
-      "url": "_framework/Capybara.f1w7yqwsqh.wasm"
+      "hash": "sha256-pEOXBXVoFCr6d3BLsp0NuApokKKwOp88P+F/wdU/prs=",
+      "url": "_framework/Capybara.8t8n0kqz90.wasm"
     },
     {
       "hash": "sha256-LcSjE5P03LBH/3NlINJUdOnJmGVP1922xxQZmPMH+6w=",
@@ -994,7 +994,7 @@ self.assetsManifest = {
       "url": "_framework/UAParser.o84k4c0k2d.wasm"
     },
     {
-      "hash": "sha256-jHjWPQT6gblpHpVjPUjQ6u0vCwCXriuui5R0mkasBy0=",
+      "hash": "sha256-JxEml3DbEl87qMFNaIoEvEYQ0pO5L38J1E9awUQyCvw=",
       "url": "_framework/blazor.boot.json"
     },
     {
