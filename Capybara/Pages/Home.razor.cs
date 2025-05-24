@@ -60,7 +60,11 @@ namespace Capybara.Pages
             if (response.Errors == null)
             {
                 mediaAssets = response.Data.MediaAssets;
-                
+
+                foreach (var item in mediaAssets)
+                {
+                    Console.WriteLine(item.Path);
+                }
                 StateHasChanged();
             }
         }
