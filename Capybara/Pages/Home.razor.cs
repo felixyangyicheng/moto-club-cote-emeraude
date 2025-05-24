@@ -1,6 +1,7 @@
 ﻿
 
 using BlazorTypewriter;
+using BootstrapBlazor.Components;
 
 namespace Capybara.Pages
 {
@@ -37,6 +38,12 @@ namespace Capybara.Pages
         .Pause(500)
         .Loop();
 
+
+        protected override async Task OnParametersSetAsync()
+        {
+            await LoadMedia();
+            await base.OnParametersSetAsync();
+        }
         private async Task LoadMedia()
         {
             const string query = @"

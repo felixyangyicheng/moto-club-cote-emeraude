@@ -43,10 +43,7 @@ builder.Services.AddScoped(sp => new GraphQLHttpClient(
     new SystemTextJsonSerializer(),
     sp.GetRequiredService<IHttpClientFactory>().CreateClient()));
 #endif
-builder.Services.AddHttpClient("fileshare.srv", client =>
-{
-    client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("fileshare.srv") ?? throw new ArgumentException());
-});
+
 builder.Services.AddAuthorizationCore();
 builder.Services.AddBootstrapBlazor();
 builder.Services.AddBlazoredLocalStorage();
