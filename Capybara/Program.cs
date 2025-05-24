@@ -1,4 +1,4 @@
-
+﻿
 using Capybara.HashCheckService;
 using Capybara.Providers;
 using GraphQL.Client.Http;
