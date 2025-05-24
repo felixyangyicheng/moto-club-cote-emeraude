@@ -74,14 +74,18 @@
 
         <ChildContent>
 
-            @if (mediaAssets.Count>0)
+            @if (mediaAssets.Count <1)
+            {
+                <p>Loading</p>
+            }
+            else
             {
                 foreach(var i in mediaAssets)
                 {
                     <MudCarouselItem Style="@(_bgWhite)" Transition="Transition.Custom" CustomTransitionEnter="@AnimationEntrance" CustomTransitionExit="@AnimationExit">
                         <div align="center" style="height:100%">
                             <img align="middle"
-                                 src="@(i.Path)"
+                                 src="https://mcce.duckdns.org@(i.Path)"
                                  alt="" />
                         </div>
                     </MudCarouselItem>

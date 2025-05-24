@@ -65,7 +65,7 @@ namespace Capybara.Pages
                 {
                     Console.WriteLine(item.Path);
                 }
-                StateHasChanged();
+                await InvokeAsync(StateHasChanged);
             }
         }
     }

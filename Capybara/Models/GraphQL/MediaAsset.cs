@@ -10,5 +10,7 @@ namespace Capybara.Models.GraphQL
         // 新增计算属性
         [JsonIgnore] // 避免序列化此字段
         public string FullUrl => $"{Path}";
+
+       
     }
 }
