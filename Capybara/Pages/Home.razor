@@ -8,101 +8,145 @@
 
 
 
-<MudContainer  Style="width:85vw">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style type="text/css">
+        /* 响应式字体样式 */
+        .responsive-text {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .responsive-typewriter {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        /* 动画样式 */
+        .bounceIn {
+            opacity: 0;
+            animation-delay: 0.5s;
+            animation-duration: 0.5s;
+            animation-name: bounceIn;
+            animation-fill-mode: forwards;
+        }
+
+        .bounceOut {
+            animation-duration: 0.5s;
+            animation-name: bounceOut;
+            animation-fill-mode: forwards;
+        }
+
+        .backInDown {
+            opacity: 0;
+            animation-delay: 0.5s;
+            animation-duration: 0.5s;
+            animation-name: backInDown;
+            animation-fill-mode: forwards;
+        }
+
+        .backOutDown {
+            animation-duration: 0.5s;
+            animation-name: backOutDown;
+            animation-fill-mode: forwards;
+        }
+
+        .rotateIn {
+            opacity: 0;
+            animation-delay: 0.5s;
+            animation-duration: 0.5s;
+            animation-name: rotateIn;
+            animation-fill-mode: forwards;
+        }
+
+        .rotateOut {
+            animation-duration: 0.5s;
+            animation-name: rotateOut;
+            animation-fill-mode: forwards;
+        }
+
+        /* 响应式媒体查询 */
+        @@media (max-width: 600px) {
+            .responsive-text {
+                font-size: 1rem;
+            }
+
+            .responsive-typewriter {
+                font-size: 1.8rem;
+            }
+        }
+
+        @@media (min-width: 601px) and (max-width: 960px) {
+            .responsive-text {
+                font-size: 1.2rem;
+            }
+
+            .responsive-typewriter {
+                font-size: 2.2rem;
+            }
+        }
+
+    </style>
+<MudContainer Style="width:85vw">
     @if (loading)
     {
 
         <Pulse />
     }
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <style type="text/css">
-
-        .bounceIn {
-        opacity: 0;
-        animation-delay: 0.5s;
-        animation-duration: 0.5s;
-        animation-name: bounceIn;
-        animation-fill-mode: forwards;
-        }
-
-        .bounceOut {
-        animation-duration: 0.5s;
-        animation-name: bounceOut;
-        animation-fill-mode: forwards;
-        }
-
-        .backInDown {
-        opacity: 0;
-        animation-delay: 0.5s;
-        animation-duration: 0.5s;
-        animation-name: backInDown;
-        animation-fill-mode: forwards;
-        }
-
-        .backOutDown {
-        animation-duration: 0.5s;
-        animation-name: backOutDown;
-        animation-fill-mode: forwards;
-        }
-
-        .rotateIn {
-        opacity: 0;
-        animation-delay: 0.5s;
-        animation-duration: 0.5s;
-        animation-name: rotateIn;
-        animation-fill-mode: forwards;
-        }
-
-        .rotateOut {
-        animation-duration: 0.5s;
-        animation-name: rotateOut;
-        animation-fill-mode: forwards;
-        }
-
-    </style>
     <br />
     <br />
     <br />
+ <MudGrid>
+    <MudItem xs="12" Class="text-center">
+        <MudText Class="responsive-text" Typo="Typo.h6">
+            Coucou 👋, Nous sommes le moto club de la côte d'Emeraude! ✌🏼
+        </MudText>
+    </MudItem>
+         <MudItem xs="12" Class="text-center mt-4 mb-6">
+    <h1 align="center"><Typewriter CustomClass="responsive-typewriter" Builder="@typewriter" /></h1>
+        </MudItem>
+ </MudGrid>
 
-    <MudText Typo="Typo.h6" align="MudBlazor.Align.Center">Coucou 👋, Nous sommes le moto club de la côte d'Emeraude! ✌🏼</MudText>
     <br />
-    <h1 align="center"><Typewriter Builder="@typewriter" /></h1>
-
-    <br />
-    <MudCarousel Class="mud-width-full" Style="height:75vh; overflow:visible" AutoCycleTime="new TimeSpan(80000000)" AutoCycle="true" TData="object">
-
-
+    <MudCarousel Class="mud-width-full" Style="height:75vh; overflow:visible"
+                 AutoCycleTime="new TimeSpan(80000000)" AutoCycle="true" TData="object">
         <ChildContent>
-
-            @if (mediaAssetsToShow.Count < 1)
-            {
-                <p>Loading</p>
-            }
-            else
+            @if (mediaAssetsToShow.Count > 0)
             {
                 foreach (var i in mediaAssetsToShow)
                 {
-                    <MudCarouselItem Style="@(_bgWhite)" Transition="Transition.Custom" CustomTransitionEnter="@AnimationEntrance" CustomTransitionExit="@AnimationExit">
+                    <MudCarouselItem Style="@(_bgWhite)" Transition="Transition.Custom"
+                                     CustomTransitionEnter="@AnimationEntrance"
+                                     CustomTransitionExit="@AnimationExit">
                         <div align="center" style="width:90%">
-                            <img align="middle"
-                                 src="https://mcce.duckdns.org@(i.Path)"
-                                 alt="" />
+                            <img src="https://mcce.duckdns.org@(i.Path)"
+                                 style="max-width:100%; max-height:70vh; object-fit:contain"
+                                 alt="Club photo" />
                         </div>
                     </MudCarouselItem>
                 }
             }
-
+            else
+            {
+                <MudCarouselItem>
+                    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                </MudCarouselItem>
+            }
         </ChildContent>
     </MudCarousel>
-
-    <Turnstile @bind-Token="@_turnstileToken"
-               SiteKey="0x4AAAAAABcyIhVKJBHDrxGr"
-               Appearance="@TurnstileAppearance.Always"
-               Execution="@TurnstileExecution.Render"
-               Theme="@TurnstileTheme.Light"
-               OnCallback="@TurnstileCallback"
-               OnErrorCallback="@TurnstileErrorCallback"
-               ResponseField="@false" />
+    <!-- 响应式Turnstile - 小屏隐藏 -->
+    <MudHidden Breakpoint="Breakpoint.Xs">
+        <div class="mt-6 text-center">
+            <Turnstile @bind-Token="@_turnstileToken"
+                       SiteKey="0x4AAAAAABcyIhVKJBHDrxGr"
+                       Appearance="@TurnstileAppearance.Always"
+                       Execution="@TurnstileExecution.Render"
+                       Theme="@TurnstileTheme.Light"
+                       OnCallback="@TurnstileCallback"
+                       OnErrorCallback="@TurnstileErrorCallback"
+                       ResponseField="@false" />
+        </div>
+    </MudHidden>
 </MudContainer>
 
 @code {
