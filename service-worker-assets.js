@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "48m7VRmx",
+  "version": "/uKVoBVV",
   "assets": [
     {
       "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
@@ -522,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-+XpLFiRIiKA8m8RsPofWclupLHrDAj4NmgrJFlUGCRc=",
-      "url": "_framework/Capybara.5pzpii6vo8.wasm"
+      "hash": "sha256-TNnEol/r9DYFG0WYtfhJqeqssu1qqn8604EWPjEYAFo=",
+      "url": "_framework/Capybara.cw4q6e0ad2.wasm"
     },
     {
       "hash": "sha256-LcSjE5P03LBH/3NlINJUdOnJmGVP1922xxQZmPMH+6w=",
@@ -694,8 +694,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.JSInterop.WebAssembly.y1ydbrr1bj.wasm"
     },
     {
-      "hash": "sha256-6E93a7LliVRVXwPR2YBZUD4TXLIfsdXeIrkU4Z5F170=",
-      "url": "_framework/MudBlazor.k52wlep3a9.wasm"
+      "hash": "sha256-nCbCmE4EHXYq52gSIl/sPhoZ+V3+BTqHXujb9cf5CLs=",
+      "url": "_framework/MudBlazor.ss1i5ef1k7.wasm"
     },
     {
       "hash": "sha256-UA3JqdmuKC+CVpnughpbLfeU9KrRcZqQ1phsZyxd8KA=",
@@ -994,7 +994,7 @@ self.assetsManifest = {
       "url": "_framework/UAParser.o84k4c0k2d.wasm"
     },
     {
-      "hash": "sha256-okv7cwzq6vpD/B0OMEq4jBDtN/Jzg7uNgDKx+d2rtCs=",
+      "hash": "sha256-pLx97KNA873B+De5zPuSmb37e6B0uXtmJEcOWLa4syQ=",
       "url": "_framework/blazor.boot.json"
     },
     {
