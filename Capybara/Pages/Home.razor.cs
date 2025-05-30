@@ -64,7 +64,11 @@ namespace Capybara.Pages
 
                 foreach (var item in mediaAssets)
                 {
+                    if (item.Path.Contains(".jpg"))
+                    {
+
                     mediaAssetsToShow.Add(item);
+                    }
                     Console.WriteLine($"https://mcce.duckdns.org{item.Path}" );
                 }
                 await InvokeAsync(StateHasChanged);
