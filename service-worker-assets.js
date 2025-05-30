@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "5Jw5UXlG",
+  "version": "jEkJxqqx",
   "assets": [
     {
       "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
@@ -522,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-IGsxpsE0e0Ym7yhGWIdSCBB/u9SFTa2QDZlGqCU/EDM=",
-      "url": "_framework/Capybara.kjqn5s3x3w.wasm"
+      "hash": "sha256-WO3UP/9c8ixKWESsx0NZbUoQIZ1vZADWAQiYrDCMmTA=",
+      "url": "_framework/Capybara.8cuz9s1f6o.wasm"
     },
     {
       "hash": "sha256-LcSjE5P03LBH/3NlINJUdOnJmGVP1922xxQZmPMH+6w=",
@@ -994,7 +994,7 @@ self.assetsManifest = {
       "url": "_framework/UAParser.o84k4c0k2d.wasm"
     },
     {
-      "hash": "sha256-9kyIoD0XeV9Ojw/Wg43ejHzOAfQlbm0Dfbqhck1RAKA=",
+      "hash": "sha256-dre5+8hg3M3NpcRmn5HRZ9snC5LqihtWuzWNqDJT3BU=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1070,15 +1070,11 @@ self.assetsManifest = {
       "url": "css/templatemo-woox-travel.css"
     },
     {
-      "hash": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
-      "url": "favicon.png"
-    },
-    {
       "hash": "sha256-FtRMtRlsEq8PXeuEoqIXLfiOHpOgMXcsUVWEcujiMEA=",
       "url": "img/Moto-club.png"
     },
     {
-      "hash": "sha256-+2hAP6Q90Ho5adUZSB9wfveGmQVvx6fNL4tFWrIfOeg=",
+      "hash": "sha256-a7/D9yP1PEaoGDyMCFSfWB1CJ8hm9Lx73ew3CsNixX0=",
       "url": "index.html"
     },
     {
