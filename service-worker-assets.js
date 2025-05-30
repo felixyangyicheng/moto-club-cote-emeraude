@@ -1,12 +1,12 @@
 self.assetsManifest = {
-  "version": "uwiLp5/I",
+  "version": "UunHFGBS",
   "assets": [
     {
       "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
       "url": "Capybara.styles.css"
     },
     {
-      "hash": "sha256-+r2Sg5Y3UnJc+gPuwfvHpR2THGSurb59suI7cz3IS0U=",
+      "hash": "sha256-LAAybKlC+GIyEzSsQw/gcD3byfW3bnsp8Y8GDc9bu4s=",
       "url": "README.md"
     },
     {
@@ -522,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-AaY1mtbeuGLByA32bLTKeI2dUi2lRnHs3RqhI5KzFA0=",
-      "url": "_framework/Capybara.rhsfop4jnv.wasm"
+      "hash": "sha256-FfFqqP9LTT7E7KNRjd8aTElxEvvivUL+RP07cBdsf+g=",
+      "url": "_framework/Capybara.3a4xvfitzh.wasm"
     },
     {
       "hash": "sha256-LcSjE5P03LBH/3NlINJUdOnJmGVP1922xxQZmPMH+6w=",
@@ -994,7 +994,7 @@ self.assetsManifest = {
       "url": "_framework/UAParser.o84k4c0k2d.wasm"
     },
     {
-      "hash": "sha256-jxYWX8DGQ+ChKIivJFbtEIxzglLQNK5bvygtrAket6w=",
+      "hash": "sha256-B703mmMUxDWv2H8R+9bYdfcmW0le6Bxn7lSpWG34arY=",
       "url": "_framework/blazor.boot.json"
     },
     {
