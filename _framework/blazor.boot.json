@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Capybara",
   "resources": {
-    "hash": "sha256-rKNwxgo4ZXaqeZEQ18GNSCDKkyJ8AUOx/cAvH5hZPTY=",
+    "hash": "sha256-VHxPp9ELs/314hkyUwsTflgBCJH8XOwAfkwYNJNzQgM=",
     "fingerprinting": {
       "BlazorComponentUtilities.jrk97nw8r4.wasm": "BlazorComponentUtilities.wasm",
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
@@ -129,7 +129,7 @@
       "System.ezrw3d5kw2.wasm": "System.wasm",
       "netstandard.eq3m07jbz5.wasm": "netstandard.wasm",
       "System.Private.CoreLib.rb75p5zah5.wasm": "System.Private.CoreLib.wasm",
-      "Capybara.qovuxa1002.wasm": "Capybara.wasm",
+      "Capybara.kjqn5s3x3w.wasm": "Capybara.wasm",
       "dotnet.native.8i76rbp54n.js": "dotnet.native.js",
       "dotnet.native.6z1lsvl6nq.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
@@ -281,7 +281,7 @@
       "System.Xml.XDocument.2zthwj8j9g.wasm": "sha256-/j2bxCGujwFZoav+qfLhqiKV/cxU2OzPXOehq/vdoB4=",
       "System.ezrw3d5kw2.wasm": "sha256-ViNRvhyxlTugIlqJHamw/HwbXlg/YWcrANmxuTM0tfg=",
       "netstandard.eq3m07jbz5.wasm": "sha256-mtdjHTGi63fvtnwxOC7rONs1J9vPEUBRHTy/TPWOuUk=",
-      "Capybara.qovuxa1002.wasm": "sha256-6jTFNwSqfbM/jmDjDBl+Rk9Eoc5JSLzxOaW+j9jldw8="
+      "Capybara.kjqn5s3x3w.wasm": "sha256-IGsxpsE0e0Ym7yhGWIdSCBB/u9SFTa2QDZlGqCU/EDM="
     }
   },
   "cacheBootResources": true,
