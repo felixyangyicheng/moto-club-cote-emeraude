@@ -10,6 +10,7 @@ namespace Capybara.Pages
         [Inject, NotNull]
         public GraphQLHttpClient GraphQLClient { get; set; } = default!;
         public List<MediaAsset> mediaAssets { get; set; } = new();
+        public List<MediaAsset> mediaAssetsToShow { get; set; } = new();
 
 
         private string AnimationEntrance = "bounceIn";
@@ -63,6 +64,7 @@ namespace Capybara.Pages
 
                 foreach (var item in mediaAssets)
                 {
+                    mediaAssetsToShow.Add(item);
                     Console.WriteLine($"https://mcce.duckdns.org{item.Path}" );
                 }
                 await InvokeAsync(StateHasChanged);

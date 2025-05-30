@@ -69,21 +69,21 @@
     <h1 align="center"><Typewriter Builder="@typewriter" /></h1>
 
     <br />
-    <MudCarousel Class="mud-width-full" Style="height:65vh; overflow:visible" AutoCycleTime="new TimeSpan(50000000)" AutoCycle="true" TData="object">
+    <MudCarousel Class="mud-width-full" Style="height:75vh; overflow:visible" AutoCycleTime="new TimeSpan(80000000)" AutoCycle="true" TData="object">
 
 
         <ChildContent>
 
-            @if (mediaAssets.Count <1)
+            @if (mediaAssetsToShow.Count < 1)
             {
                 <p>Loading</p>
             }
             else
             {
-                foreach(var i in mediaAssets)
+                foreach (var i in mediaAssetsToShow)
                 {
                     <MudCarouselItem Style="@(_bgWhite)" Transition="Transition.Custom" CustomTransitionEnter="@AnimationEntrance" CustomTransitionExit="@AnimationExit">
-                        <div align="center" style="height:100%">
+                        <div align="center" style="width:90%">
                             <img align="middle"
                                  src="https://mcce.duckdns.org@(i.Path)"
                                  alt="" />
