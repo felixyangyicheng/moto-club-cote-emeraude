@@ -1,5 +1,7 @@
 ﻿
 
+using System.IdentityModel.Tokens.Jwt;
+
 namespace Capybara.Components.Authentication
 {
     public partial class GoogleAuth

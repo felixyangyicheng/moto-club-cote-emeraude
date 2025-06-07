@@ -40,6 +40,7 @@
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.0-preview.5.25277.114" />
 		<PackageReference Include="MudBlazor" Version="8.7.0" />
 		<PackageReference Include="BlazorPro.Spinkit" Version="1.2.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.0" />
 		<PackageReference Include="System.Private.Uri" Version="4.3.2" />
 		<PackageReference Include="ToolBelt.Web.CssClassInlineBuilder" Version="3.1.0.1" />
 	</ItemGroup>
