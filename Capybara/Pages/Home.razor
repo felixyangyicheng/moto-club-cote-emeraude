@@ -133,10 +133,11 @@
         </ChildContent>
     </MudCarousel>
     <!-- 显示统计数据的Blazor组件 -->
-<VisitStat />
+
     <!-- 响应式Turnstile - 小屏隐藏 -->
     <MudHidden Breakpoint="Breakpoint.Xs">
         <div class="mt-6 text-center">
+            <VisitStat />
             <Turnstile @bind-Token="@_turnstileToken"
                        SiteKey="0x4AAAAAABcyIhVKJBHDrxGr"
                        Appearance="@TurnstileAppearance.Always"
