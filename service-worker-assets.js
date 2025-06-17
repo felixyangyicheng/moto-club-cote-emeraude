@@ -1,8 +1,8 @@
 self.assetsManifest = {
-  "version": "IBDZ0b8R",
+  "version": "Kyj032RC",
   "assets": [
     {
-      "hash": "sha256-LWFY72hQu+5/7Y5hmbNic3UbPGLoMBFS+OZUrYFz7L4=",
+      "hash": "sha256-pr3jd9seNPZwqfObQsEpnlW3T8SRtFBEQKkeR/EwPHQ=",
       "url": "Capybara.styles.css"
     },
     {
@@ -522,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-h2NcgdvN/uXOAnCOdS/2gVIodEAc8V3sKrhVqloPlN8=",
-      "url": "_framework/Capybara.tv0cx3e6xl.wasm"
+      "hash": "sha256-24TvIj4tlBM/jJ4wr20A8hfqWOA9H+RPrvAT2D3/EPE=",
+      "url": "_framework/Capybara.ji09ezij4f.wasm"
     },
     {
       "hash": "sha256-LcSjE5P03LBH/3NlINJUdOnJmGVP1922xxQZmPMH+6w=",
@@ -918,7 +918,7 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-MHliPa1nxfcJdQ6DRNviotrOEeSYbPr1mOVX9zheQu0=",
+      "hash": "sha256-VVvkZadfwlEI5CaZjgbfxZ3BrcS+0d/WY2h7pZyR5eo=",
       "url": "_framework/dotnet.js"
     },
     {
@@ -990,7 +990,7 @@ self.assetsManifest = {
       "url": "img/Moto-club.png"
     },
     {
-      "hash": "sha256-HFr8mEBYyJTNFrxlYWxXC3rl5yHIw/KzkmTl+BRboVc=",
+      "hash": "sha256-mXRNbmott4OR1j2f9lSyiDkKjFw7XNUY5+uCH1xCF1s=",
       "url": "index.html"
     },
     {
@@ -1000,6 +1000,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-VeO3LAKFTrja+3ZOVCIlwqUJCFxQnfpla/ufcsKcnl0=",
       "url": "js/generate-static.js"
+    },
+    {
+      "hash": "sha256-icNx0eTzt3p7H6LOKlg3NN850ZMZZGSLgEOVPVyTsKY=",
+      "url": "js/getViewStats.js"
     },
     {
       "hash": "sha256-E3FxaNybf8RMo7MweHAyvLNUoBtvnWXe1trWmsbi0Sc=",

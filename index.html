@@ -52,9 +52,11 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    Page Views on this page:<span id="page_pv"></span>
+    <div id="analytics-container" style="display:none;">
+        本页访问人次:<span id="page_pv"></span>
+        本页访问人数:<span id="page_uv"></span>
+    </div>
 
-    Unique Visitors on this page:<span id="page_uv"></span>
     <script src="https://accounts.google.com/gsi/client"></script>
     <script defer src="//webviso.yestool.org/js/index.min.js" data-base-url="https://analytics_with_cloudflare.boutique-plan-b-mao.workers.dev"></script>
     <script src="/js/googleAuth.js"></script>
@@ -65,6 +67,7 @@
 
     <script src="/js/scroll.js"></script>
     <script src="/js/downloadSitemap.js"></script>
+    <script src="/js/getViewStats.js"></script>
 
 
 </body>
