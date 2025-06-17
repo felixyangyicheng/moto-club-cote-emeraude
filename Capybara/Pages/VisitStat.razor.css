@@ -1,0 +1,72 @@
+﻿.visit-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: 500px;
+    margin: 10px 0;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    min-width: 180px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+    min-width: 60px;
+    text-align: right;
+}
+
+.last-updated {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.refresh-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+    .refresh-btn:hover {
+        background-color: #dee2e6;
+    }
+
+    .refresh-btn svg {
+        transition: transform 0.3s ease;
+    }
+
+    .refresh-btn:active svg {
+        transform: rotate(360deg);
+    }
