@@ -2,6 +2,7 @@
 
 using BlazorTypewriter;
 using BootstrapBlazor.Components;
+using System.Net.Http;
 
 namespace Capybara.Pages
 {
@@ -39,6 +40,12 @@ namespace Capybara.Pages
         .Pause(500)
         .Loop();
 
+//        @inject IHttpClientFactory HttpClientFactory
+
+
+
+//var client = HttpClientFactory.CreateClient("ApiFallback");
+//        var response = await client.GetAsync("endpoint"); // l'uri est géré par les handlers
 
         protected override async Task OnParametersSetAsync()
         {

@@ -4,6 +4,8 @@ using Capybara.Providers;
 using GraphQL.Client.Http;
 using GraphQL.Client.Serializer.SystemTextJson;
 using Microsoft.AspNetCore.Components.Authorization;
+using Polly;
+using Polly.Timeout;
 using System.IdentityModel.Tokens.Jwt;
 
 
@@ -11,6 +13,45 @@ using System.IdentityModel.Tokens.Jwt;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+
+
+//builder.Services.AddHttpClient("ApiFallback", client =>
+//    client.BaseAddress = new Uri(builder.Configuration["ApiUris:Primary"]))
+//.AddPolicyHandler((sp, request) =>
+//{
+//    // Politique Timeout de 25 s
+//    var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(25));
+
+//    // Politique Retry + Fallback sur d'autres URL
+//    var uris = sp.GetRequiredService<IConfiguration>()
+//                 .GetSection("ApiUris:Fallbacks").Get<string[]>();
+
+//    var retryAndFallback = Policy<HttpResponseMessage>
+//        .Handle<TimeoutRejectedException>()
+//        .Or<HttpRequestException>()
+//        .RetryAsync(uris.Length, onRetryAsync: async (outcome, retryCount, context) =>
+//        {
+//            context["FallbackUri"] = uris[retryCount - 1];
+//        })
+//        .WrapAsync(
+//            Policy<HttpResponseMessage>
+//              .Handle<TimeoutRejectedException>()
+//              .Or<HttpRequestException>()
+//              .FallbackAsync(
+//                  fallbackAction: (ctx, ct) =>
+//                  {
+//                      var fb = ctx["FallbackUri"] as string;
+//                      var client = sp.GetRequiredService<IHttpClientFactory>()
+//                                     .CreateClient("ApiFallback");
+//                      return client.GetAsync(fb, ct);
+//                  }
+//              )
+//        );
+
+//    return timeoutPolicy.WrapAsync(retryAndFallback);
+//});
+
+
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddCascadingAuthenticationState();
