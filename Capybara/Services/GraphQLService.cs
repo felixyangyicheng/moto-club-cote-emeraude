@@ -2,6 +2,7 @@
 using GraphQL;
 using GraphQL.Client.Http;
 using GraphQL.Client.Serializer.Newtonsoft;
+using Microsoft.Extensions.Options;
 using Polly;
 using Polly.Timeout;
 using System.Net;
@@ -10,51 +11,56 @@ public class GraphQLService : IDisposable
 {
     private readonly ApiConfig _config;
     private readonly HttpClient _httpClient;
-    private readonly AsyncTimeoutPolicy _timeoutPolicy;
-    private readonly IList<GraphQLHttpClient> _clients = new List<GraphQLHttpClient>();
+    private readonly IAsyncPolicy _resiliencePolicy;
 
-    public GraphQLService(ApiConfig config)
+    public GraphQLService(
+        IOptions<ApiConfig> config,
+        IHttpClientFactory httpClientFactory)
     {
-        _config = config;
-        _httpClient = new HttpClient { Timeout = Timeout.InfiniteTimeSpan };
-        _timeoutPolicy = Policy.TimeoutAsync(TimeSpan.FromSeconds(config.TimeoutSeconds));
+        _config = config.Value;
+        _httpClient = httpClientFactory.CreateClient();
+        _httpClient.Timeout = Timeout.InfiniteTimeSpan;
+
+        // 1. Politique de Timeout
+        var timeoutPolicy = Policy.TimeoutAsync(
+            TimeSpan.FromSeconds(_config.TimeoutSeconds),
+            TimeoutStrategy.Optimistic);
+
+        // 2. Politique de Retry avec basculement d'URL
+        var retryPolicy = Policy
+            .Handle<Exception>(IsRetryableException)
+            .RetryAsync(_config.AllUris.Count - 1, onRetry: (_, retryCount, context) =>
+            {
+                context["currentUriIndex"] = retryCount;
+            });
+
+        // Combinaison des politiques (Retry > Timeout)
+        _resiliencePolicy = Policy.WrapAsync(retryPolicy, timeoutPolicy);
     }
 
     public async Task<GraphQLResponse<T>> SendQueryWithFallback<T>(GraphQLRequest request)
     {
-        Exception lastException = null;
-
-        foreach (var uri in _config.AllUris)
+        var context = new Context
         {
-            try
-            {
-                var client = CreateGraphQLClient(uri);
-                return await _timeoutPolicy.ExecuteAsync(
-                    async ct => await client.SendQueryAsync<T>(request, ct),
-                    CancellationToken.None
-                );
-            }
-            catch (Exception ex) when (IsRetryableException(ex))
-            {
-                lastException = ex;
-                // Log: $"Échec sur {uri}, passage au suivant... Erreur: {ex.Message}"
-            }
-        }
+            ["currentUriIndex"] = 0  // Commence par l'URL primaire
+        };
 
-        throw new AggregateException("Tous les endpoints ont échoué", lastException);
+        return await _resiliencePolicy.ExecuteAsync(async ctx =>
+        {
+            var index = (int)ctx["currentUriIndex"];
+            var uri = _config.AllUris[index];
+
+            using var client = CreateGraphQLClient(uri);
+            return await client.SendQueryAsync<T>(request);
+        }, context);
     }
 
     private GraphQLHttpClient CreateGraphQLClient(string uri)
     {
-        var options = new GraphQLHttpClientOptions
-        {
-            EndPoint = new Uri(uri),
-            HttpMessageHandler = new HttpClientHandler()
-        };
-
-        var client = new GraphQLHttpClient(options, new NewtonsoftJsonSerializer(), _httpClient);
-        _clients.Add(client);
-        return client;
+        return new GraphQLHttpClient(
+            new GraphQLHttpClientOptions { EndPoint = new Uri(uri) },
+            new NewtonsoftJsonSerializer(),
+            _httpClient);
     }
 
     private bool IsRetryableException(Exception ex)
@@ -63,15 +69,12 @@ public class GraphQLService : IDisposable
             || ex is TimeoutException           // Timeout .NET
             || ex is HttpRequestException       // Erreurs réseau
             || (ex is GraphQLHttpRequestException gqlEx &&
-                (int)gqlEx.StatusCode >= 500);   // Erreurs serveur (5xx)
+                (int)gqlEx.StatusCode >= 500);  // Erreurs serveur (5xx)
     }
 
     public void Dispose()
     {
-        foreach (var client in _clients)
-        {
-            client.Dispose();
-        }
-        _httpClient.Dispose();
+        _httpClient?.Dispose();
+        GC.SuppressFinalize(this);
     }
 }
