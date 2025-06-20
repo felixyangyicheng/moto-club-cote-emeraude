@@ -33,6 +33,7 @@
 		<PackageReference Include="BootstrapBlazor.WebAPI" Version="9.0.0" />
 		<PackageReference Include="BwGoogleAuth" Version="1.0.1" />
 		<PackageReference Include="GraphQL.Client" Version="6.1.0" />
+		<PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="6.1.0" />
 		<PackageReference Include="GraphQL.Client.Serializer.SystemTextJson" Version="6.1.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.0-preview.5.25277.114" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="10.0.0-preview.5.25277.114" />

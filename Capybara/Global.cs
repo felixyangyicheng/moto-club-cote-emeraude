@@ -17,7 +17,7 @@ global using Capybara;
 global using MudBlazor.Services;
 global using MudBlazor;
 global using Blazored.LocalStorage;
-
+global using GraphQL.Client.Serializer.Newtonsoft;
 global using Capybara.Models;
 global using Capybara.Models.Authentications;
 global using System.Net.Http.Json;
