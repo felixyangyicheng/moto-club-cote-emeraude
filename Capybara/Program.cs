@@ -1,5 +1,6 @@
 ﻿
 using Capybara.HashCheckService;
+using Capybara.Models.Configs;
 using Capybara.Providers;
 using GraphQL.Client.Http;
 using GraphQL.Client.Serializer.SystemTextJson;
@@ -15,41 +16,6 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 
-//builder.Services.AddHttpClient("ApiFallback", client =>
-//    client.BaseAddress = new Uri(builder.Configuration["ApiUris:Primary"]))
-//.AddPolicyHandler((sp, request) =>
-//{
-//    // Politique Timeout de 25 s
-//    var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(25));
-
-//    // Politique Retry + Fallback sur d'autres URL
-//    var uris = sp.GetRequiredService<IConfiguration>()
-//                 .GetSection("ApiUris:Fallbacks").Get<string[]>();
-
-//    var retryAndFallback = Policy<HttpResponseMessage>
-//        .Handle<TimeoutRejectedException>()
-//        .Or<HttpRequestException>()
-//        .RetryAsync(uris.Length, onRetryAsync: async (outcome, retryCount, context) =>
-//        {
-//            context["FallbackUri"] = uris[retryCount - 1];
-//        })
-//        .WrapAsync(
-//            Policy<HttpResponseMessage>
-//              .Handle<TimeoutRejectedException>()
-//              .Or<HttpRequestException>()
-//              .FallbackAsync(
-//                  fallbackAction: (ctx, ct) =>
-//                  {
-//                      var fb = ctx["FallbackUri"] as string;
-//                      var client = sp.GetRequiredService<IHttpClientFactory>()
-//                                     .CreateClient("ApiFallback");
-//                      return client.GetAsync(fb, ct);
-//                  }
-//              )
-//        );
-
-//    return timeoutPolicy.WrapAsync(retryAndFallback);
-//});
 
 
 
@@ -64,6 +30,17 @@ builder.Services.AddHttpClient("notification.push.srv.local", client =>
         client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("notification.push.srv.local") ?? throw new ArgumentException());
     });
 
+builder.Services.AddSingleton(new ApiConfig
+{
+    Primary = "https://mcce.duckdns.org/api/graphql",
+    Fallbacks = new List<string>
+    {
+        "https://mcce.servebeer.com/api/graphql",
+        "https://mcce.duckdns.org:16680/api/graphql"
+    },
+    TimeoutSeconds = 25
+});
+builder.Services.AddScoped<GraphQLService>();
 builder.Services.AddScoped(sp => new GraphQLHttpClient(
     new GraphQLHttpClientOptions
     {

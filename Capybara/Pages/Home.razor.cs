@@ -63,7 +63,9 @@ namespace Capybara.Pages
             }";
 
             var request = new GraphQLRequest { Query = query };
-            var response = await GraphQLClient.SendQueryAsync<MediaAssetsResponse>(request);
+            //var response = await GraphQLClient.SendQueryAsync<MediaAssetsResponse>(request);
+            var response = await GraphQLService.SendQueryWithFallback<MediaAssetsResponse>(request);
+         
 
             if (response.Errors == null)
             {
