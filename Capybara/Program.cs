@@ -32,6 +32,7 @@ builder.Services.AddHttpClient("notification.push.srv.local", client =>
 
 builder.Services.Configure<ApiConfig>(builder.Configuration.GetSection("ApiUris"));
 builder.Services.AddScoped<GraphQLService>();
+
 builder.Services.AddScoped(sp => new GraphQLHttpClient(
     new GraphQLHttpClientOptions
     {
