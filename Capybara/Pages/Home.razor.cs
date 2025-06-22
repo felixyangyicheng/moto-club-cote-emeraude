@@ -3,6 +3,7 @@
 using BlazorTypewriter;
 using BootstrapBlazor.Components;
 using System.Net.Http;
+using Capybara.Contracts;
 
 namespace Capybara.Pages
 {
