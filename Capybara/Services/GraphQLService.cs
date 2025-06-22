@@ -7,7 +7,7 @@ using Polly;
 using Polly.Timeout;
 using System.Net;
 
-public class GraphQLService : IDisposable
+public class GraphQLService : IGraphQLService, IDisposable
 {
     private readonly ApiConfig _config;
     private readonly HttpClient _httpClient;

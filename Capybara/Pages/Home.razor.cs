@@ -11,7 +11,7 @@ namespace Capybara.Pages
         [Inject, NotNull]
         public GraphQLHttpClient GraphQLClient { get; set; } = default!;
         [Inject, NotNull]
-        public GraphQLService GraphQLService { get; set; } = default!;
+        public IGraphQLService GraphQLService { get; set; } = default!;
         public List<MediaAsset> mediaAssets { get; set; } = new();
         public List<MediaAsset> mediaAssetsToShow { get; set; } = new();
 

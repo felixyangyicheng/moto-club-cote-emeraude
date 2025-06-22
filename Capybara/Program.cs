@@ -31,7 +31,6 @@ builder.Services.AddHttpClient("notification.push.srv.local", client =>
     });
 
 builder.Services.Configure<ApiConfig>(builder.Configuration.GetSection("ApiUris"));
-builder.Services.AddScoped<GraphQLService>();
 
 builder.Services.AddScoped(sp => new GraphQLHttpClient(
     new GraphQLHttpClientOptions
@@ -61,6 +60,7 @@ builder.Services.AddSingleton<HashServiceFactory>();
 builder.Services.AddScoped<SiteMapService>();
 
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<IGraphQLService, GraphQLService>();
 
 builder.Services.AddScoped<ApiAuthenticationStateProvider>();
 builder.Services.AddScoped<AuthenticationStateProvider>(p => p.GetRequiredService<ApiAuthenticationStateProvider>());
