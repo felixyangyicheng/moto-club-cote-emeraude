@@ -21,5 +21,14 @@ public class ApiConfig
 
         if (TimeoutSeconds <= 0)
             throw new InvalidOperationException("Timeout must be positive");
+
+        if (Fallbacks == null || !Fallbacks.Any())
+            throw new InvalidOperationException("At least one fallback URL is required");
+
+        foreach (var url in AllUris)
+        {
+            if (!Uri.TryCreate(url, UriKind.Absolute, out _))
+                throw new InvalidOperationException($"Invalid URL format: {url}");
+        }
     }
 }
