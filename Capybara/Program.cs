@@ -30,7 +30,19 @@ builder.Services.AddHttpClient("notification.push.srv.local", client =>
         client.BaseAddress = new Uri(builder.Configuration.GetValue<string>("notification.push.srv.local") ?? throw new ArgumentException());
     });
 
-builder.Services.Configure<ApiConfig>(builder.Configuration.GetSection("ApiUris"));
+var apiConfig = new ApiConfig
+{
+    Primary = "https://api1.example.com/graphql",
+    Fallbacks = new List<string>
+    {
+      "https://mcce.servebeer.org/api/graphql",
+      "https://mcce.duckdns.org:16680/api/graphql",
+      "https://mcce.servebeer.org:16680/api/graphql"
+    },
+    TimeoutSeconds = 25
+};
+
+builder.Services.AddSingleton(apiConfig);
 
 builder.Services.AddScoped(sp => new GraphQLHttpClient(
     new GraphQLHttpClientOptions
