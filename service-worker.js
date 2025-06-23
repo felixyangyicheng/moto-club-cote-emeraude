@@ -1,4 +1,4 @@
-/* Manifest version: pF+LhLiA */
+/* Manifest version: pEqcausa */
 // Caution! Be sure you understand the caveats before publishing an application with
 // offline support. See https://aka.ms/blazor-offline-considerations
 
