@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "pEqcausa",
+  "version": "8/Ny0icV",
   "assets": [
     {
       "hash": "sha256-pr3jd9seNPZwqfObQsEpnlW3T8SRtFBEQKkeR/EwPHQ=",
@@ -522,8 +522,8 @@ self.assetsManifest = {
       "url": "_framework/BwGoogleAuth.00fq9k2gwz.wasm"
     },
     {
-      "hash": "sha256-D9Pa737gMMDzfva/1ROfcejsE+cF+mNap0zCCYNsfUM=",
-      "url": "_framework/Capybara.x0xrtgpxd9.wasm"
+      "hash": "sha256-06U0o9dXG0SoWq/Qv7jeZO8U+cmb/weJnqnvO6nzRTg=",
+      "url": "_framework/Capybara.xjqf6kl170.wasm"
     },
     {
       "hash": "sha256-LcSjE5P03LBH/3NlINJUdOnJmGVP1922xxQZmPMH+6w=",
@@ -670,8 +670,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.Extensions.Options.7bc8hvnovi.wasm"
     },
     {
-      "hash": "sha256-6fHgSV1ddxikkM1XUD/wRVe7X8wwTG8XpnlFfssvq0s=",
-      "url": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.fe5vtxwamn.wasm"
+      "hash": "sha256-hxmouXECYYT8WTQsmlw98L+9SwI0aPUFOGid4Vif1H8=",
+      "url": "_framework/Microsoft.Extensions.Options.ConfigurationExtensions.5pzfkold7k.wasm"
     },
     {
       "hash": "sha256-U9EwA+Iyw9K4niMaba5c6cQrnz7t4A6Xep3H8esrpz8=",
@@ -978,7 +978,7 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-MogvsuFKhLUEreYFQVSDpb4PuJFECwAyM5+cHYVA/T8=",
+      "hash": "sha256-VSgKvCq4hbjoHP2mz2iptlZt6LqrrM8DHqDLEELpLak=",
       "url": "_framework/dotnet.js"
     },
     {
