@@ -1,0 +1,15 @@
+{
+  "name": "Moto-Club-Côte-Emeraude",
+  "short_name": "MCCE",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#03173d",
+  "icons": [
+    {
+      "src": "img/Moto-club.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
